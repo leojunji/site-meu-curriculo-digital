@@ -33,6 +33,9 @@ body {
     color: var(--cor-padrao-fonte);
 }
 
+/* -------------------------------- */
+
+
 /* menu */
 
 
@@ -54,7 +57,7 @@ body {
 }
 
 
-.cabecalho__menu__link {
+.menu__topics__topic  {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem; /*24px*/
@@ -63,13 +66,13 @@ body {
 
 }
 
-.cabecalho__menu__link:hover {
+.menu__topics__topic:hover {
     text-decoration: underline;
 }
 
 
 
-
+/* -------------------------------- */
 
 /* main */
 
@@ -164,6 +167,9 @@ body {
     width: 310px;
 }
 
+/* -------------------------------- */
+
+
 
 /* about_developer */
 
@@ -194,6 +200,11 @@ body {
 /* .about_developer__text:hover {
     color: var(--cor-padrao-destaque);
 } */
+
+
+
+
+/* -------------------------------- */
 
 /*caso a largura da tela esteja igual a 1200px ou menor, os filhos de aprensetação vão se alinhar em coluna
 column: os elementos a direita vaão para baixo, o reverse faz eles irem para cima*/
@@ -235,12 +246,16 @@ column: os elementos a direita vaão para baixo, o reverse faz eles irem para ci
     }
 }
 
+
+
+/* -------------------------------- */
+
 @media (max-width: 350px) {
 
-    .cabecalho__menu__link {
+    .menu__topics__topic {
         font-size: 1rem; /*24px*/
     }
     .presentation__links__navigation {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 }

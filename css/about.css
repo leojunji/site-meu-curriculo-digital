@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*menu css in style.css*/
+
+
+
+:root { 
+    --cor-padrao-curriculum-texto: #0A1D56;
+    --cor-padrao-curriculum-background: rgb(238, 209, 176);
+    --fonte-padrao-curriculum: 'Times', sans-serif; 
+}
+
+.menu {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.topics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.topic {
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remover borda */
+    border-radius: 30px; /* Cantos arredondados para fazer parecer uma pílula */
+    background-color:  rgb(175, 107, 175); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remover sublinhado */
+    display: inline-block; /* Exibir como bloco */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor ao passar o mouse */
+  }
+  
+  .topic:hover {
+    background-color: var(--cor-padrao-background); /* Mudar a cor de fundo quando o mouse passar por cima */
+  }
+  
+
+.curriculum {
+    
+     /* width: 100%; faz o curriculum ocupar 100% do espaco, assim a cor roxa do espaco disponivel não vai aparecer
+    geralmente quando aparece a cor roxa no devTools mode, é porque o width ou o height não estava configurado */
+
+    /*vertical horinzontal, margem de fora do curriculum*/
+    /* margin-top: 5%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-left: 10%; */
+    margin: 5%;
+    
+    
+    /*padding -> é o espaço entre o conteúdo interno(ex:<p>) do curriculum e a borda*/
+    padding: 5% 5%; 
+    
+    
+    /*não precisa de height, já que ela irá se ajustar a quantidade de sections*/
+    /* height: 1750px; */
+    background-color: var(--cor-padrao-curriculum-background);
+    border: 2px solid var(--cor-padrao-curriculum-background);
+    border-radius: 12px;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);  */
+    color: var(--cor-padrao-curriculum-texto);
+    font-style: var(--fonte-padrao-curriculum);
+    
+    /* justify-curriculum: space-between; */
+    font-size: 1.2rem; /*=24px*/
+}
+
+.curriculum__tittle {
+    display: flex;
+    /*é necessário usá-lo para centralizar o conteúdo, do contrário ele não vai ficar no centro. ele de certa forma define onde é o centro*/
+    flex-direction: column;
+    /*alinha o titulo <h1> no centro*/
+    align-items: center; 
+    
+}
+
+.curriculum__tittle h1 {
+    font-size: 3rem;
+}
+
+.curriculum__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+/*configuração geral para os botões*/
+.page_button {
+    margin: 5% 5%;
+    
+}
+
+.page_button button {
+    
+    width: 70px; /* Defina a largura desejada */
+    height: 70px; /* Defina a altura desejada */
+    border-radius: 50%; /* Isso faz com que as bordas sejam arredondadas, tornando o botão circular */
+    background-color: var(--cor-padrao-background); /* Cor de fundo do botão */
+    color: var(--cor-padrao-fonte); /* Cor do texto dentro do botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    line-height: 50px; /* Centraliza verticalmente o texto */
+    text-decoration: none; /* Remove a sublinhado padrão para links */
+    display: inline-block; /* Permite definir largura e altura no elemento */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    font-size: 0.8rem;
+}
+
+
+.page_button.top {
+    display: none;
+    
+}
+
+/*configuração específica para os botões de cima, que aparacem em telas menores*/
+
+
+
+@media(max-width: 700px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 50px;
+    }
+    
+
+    .curriculum__text {
+        padding: 10px;
+        font-size: 15px;
+        
+    }
+    
+
+    .page_button_phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    
+    .page_button.side {
+        display: none;
+    }
+
+    .page_button.top {
+        display: block;
+    }
+  
+}
+
+
+
+
+
+
