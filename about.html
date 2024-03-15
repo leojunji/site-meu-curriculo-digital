@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
-    <!--Atalho para escrever o link: escrever link:css + enter-->
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/about.css">
+    <!-- link shortcut: escrever link:css + enter-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
+    
 </head>
 <body>
-    <header class="cabecalho">
-        <!--dentro da nav vai ficar os links do menu-->
-        <nav class="cabecalho__menu">
-            <a href="./index.html" class="cabecalho__menu__link">Home</a>
-            <a href="./about.html" class="cabecalho__menu__link">Sobre mim</a>
+    <header class="menu">
+        <!--nav contains menu links-->
+        <nav class="menu__topics">
+            <a href="./index.html" class="menu__topics__topic">Home</a>
+            <a href="./about.html" class="menu__topics__topic">Sobre mim</a>
         </nav>
 
 
@@ -97,10 +99,10 @@
     </main>
 
 
-    <footer class="rodape">
-        <a class="rodape__desenvolvedor__link" >
+    <footer class="about_developer">
+        <p class="about_developer__text" >
         Desenvolvido por leojunji@outlook.com
-        </a>
+        </p>
     </footer>
 
     <script src="./main.js"></script>
