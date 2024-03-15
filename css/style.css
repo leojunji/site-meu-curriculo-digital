@@ -182,7 +182,7 @@ body {
     border-radius: 8px; 
     text-align: center;
 }
-.about_developer__link {
+.about_developer__text {
     text-decoration: none;
     color: var(--cor-padrao-fonte);
     font-weight: 600;
@@ -191,7 +191,7 @@ body {
     padding: 24px; /*distancia entre o texto e a borda*/
 
 }
-/* .about_developer__link:hover {
+/* .about_developer__text:hover {
     color: var(--cor-padrao-destaque);
 } */
 
