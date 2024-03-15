@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* ATALHO PARA COMENTAR CTRL + K + C */
+
+/*Variáveis no css
+
+Há dois tipos de escopo global e local, em que a global você pode usar em todo os blocos css, já o local
+você define dentro de uma classe/bloco css e a variável irá funcionar apenas lá, naquele bloco
+
+forma de declarar variável:
+A variável precisa ser declarada com um hífen duplo (--) no início, para que seja reconhecida como 
+variável e não como propriedade CSS.
+--nome-da-variavel
+*/
+
+
+/* :root define que as variáveis dentro dele serão globais
+caso desejemos criar uma variável local, no local do root escrevemos o nome da classe/bloco que está variável
+irá funcionar */
+
+
+/*valores palete:
+0A1D56 ~ azul escuro
+#170133 ~ roxo escuro
+37B5B6 ~ azul claro
+F2F597 ~ amarelo
+*/
+:root { 
+    --cor-padrao-background: #170133;
+    --cor-padrao-fonte: #8CABFF;
+    --cor-padrao-destaque: rgb(13, 175, 224);
+}
+
+
+
+/*Há uma configuração de estilo padrão quando criamos o site, assim sendo, escrevemos os
+comandos abaixo, que servem para resetar/tirar este estilo padrão de todos(*) os elementos 
+------
+Para resetar os padrões dos navegadores de forma simples utilizamos as propriedades margin, 
+que define a área de margem nos quatro lados do elemento (cima, direita, baixo, esquerda), 
+e padding, que define a área de preenchimento interna nos mesmos quatro lados do elemento, 
+ambas com valor igual à 0.*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    /*coloca o body para preencher 100% da página, pois inicialmente ele não ocupa 100% da tela
+    height: 100vh; 
+    vh = viewpor height, assim 100% da altura do viewport ou seja, 100% da altura da tela; o viewport foi configurado no html no head
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    para fazer que os conteúdos não saim de dentro do body, ou seja, de dentro da tela, é só colocar o:
+    box-sizing: border-box;*/
+
+
+    /*cor do fundo do body, neste caso ele está utilizando a variável global --cor-padrao-background*/
+    background-color: var(--cor-padrao-background);
+    /*cor das letras*/
+    color: var(--cor-padrao-fonte);
+}
+
+/* cabecalho */
+
+
+.cabecalho {
+    /* padding: [top] [right] [bottom] [left]  ou  padding: [padding vertical] [padding horizontal] 
+    O ideal é usar porcentagem, pois ai é por exemplo 2% do tamanho da tela do dispositivo do usuário */
+    padding: 2% 0 0 0%;
+    display: flex;
+    /*deixa os filho no centro*/
+    justify-content: center;
+    
+}
+
+/* Sempre colocar o display flex no elemento pai, por exemplo, se eu quero display flex no 
+.cabecalho__menu__link então eu coloco display flex no .cabecalho__menu */
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /*24px*/
+    font-weight: 600;
+    color: var(--cor-padrao-destaque);
+
+}
+
+.cabecalho__menu__link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* main */
+
+
+
+
+.presentation {
+    /* padding: [padding vertical] [padding horizontal] ou [parte superior e parte infeirior] [lado direito e lado esquerdo] */
+    padding: 5% 15%;
+    /*vai colocar a classe(.) presentation como display: flex, assim será possível mexer/alinhar com os 
+    itens(filhas) dentro dela, ou seja
+    ao escrever este comando podemos a partir de agora usar o flexbox para nossa estilização, podendo agora
+    escrever os comandos do flexbox como por exemplo o align-items*/
+    display: flex;
+    /*vai deixar os itens no centro*/
+    align-items: center;
+    /*vai colocar um espaço entre os elementos filhos*/
+    justify-content: space-between;
+    gap: 82px; /*espaços entre os filhos da classe presentation, só é possível ter espaço pois o space-between está ativado*/
+}
+
+.apresentacao__conteudo {
+    /*aqui os conteudos vão ocupar 50% do elemento pai*/
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /*vai aumentar o space-between*/
+    gap: 40px;
+    
+}
+
+.texto-destaque {
+    color: var(--cor-padrao-destaque);
+    
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem; /*=24px*/
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__links {
+    /*Aplica o flexbox nos filhos(<a>) desta div*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*vai deixar os botoes no centro*/
+    align-items: center;
+    /*vai aumentar o space-between*/
+    gap: 32px;
+}
+
+.apresentacao__links_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem; /*=24px*/
+}
+
+/* botoes das redes sociais de contato */
+.apresentacao__links_navegacao {
+    display: flex;
+    /*vai deixar os itens no centro*/
+    justify-content: center;
+    /*espaço entre os itens*/
+    gap: 16px;
+    /* border = [tamanho da borda] [tracejado/estilo da borda] [cor da borda] */
+    border: 2px groove var(--cor-padrao-destaque);
+    /* largura do background */
+    width: 50%;
+    /* alinha o texto */
+    text-align: center; 
+    border-radius: 8px; 
+    font-size: 1.5rem; /*=24px*/
+    /*
+    padding: [eixo vertical] [eixo horizontal] 
+    */
+    padding: 21.5px 0px; /*21.5*/
+    /*tira o sublinhado do link*/
+    text-decoration: none;
+    /*cor das letras*/
+    color: var(--cor-padrao-fonte);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /*=28px*/
+
+}
+.apresentacao__links_navegacao:hover {
+    color: var(--cor-padrao-destaque);
+    font-size: 1.75rem; /*=28px*/
+    border-width: 0px;
+    width: 310px;
+}
+
+
+/* rodape */
+
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+
+
+.rodape {
+    color: var(--cor-padrao-background);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-padrao-background);
+    border-radius: 8px; 
+    text-align: center;
+}
+.rodape__desenvolvedor__link {
+    text-decoration: none;
+    color: var(--cor-padrao-fonte);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s; /* Adiciona uma transição para a propriedade de cor */
+    padding: 24px; /*distancia entre o texto e a borda*/
+
+}
+/* .rodape__desenvolvedor__link:hover {
+    color: var(--cor-padrao-destaque);
+} */
+
+/*caso a largura da tela esteja igual a 1200px ou menor, os filhos de aprensetação vão se alinhar em coluna
+column: os elementos a direita vaão para baixo, o reverse faz eles irem para cima*/
+@media (max-width: 1200px) {
+    body {
+        background-color: #170133;
+    }
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        /*o display flex já foi declarado no cabecalho__menu fora do @media, assim o display flex aplica aqui automaticamente*/
+        justify-content: center;
+    }
+    
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    } 
+
+    .apresentacao__conteudo {
+        /*width corresponde a largura da apresentacao__conteudo, assim sendo se colocar:
+        width: 0;
+        indica que não existe largura, assim o conteúdo de dentro vai transbordar, agora se você colocar
+        width: 100%; 
+        ou 
+        width: auto;
+        indica que ela vai ocupar a tela por completo; 100% é igual a auto*/
+        width: 100%;
+    }
+    .apresentacao__links {
+        gap: 39px;
+    }
+    
+    .rodape {
+        background-color: var(--cor-padrao-background);
+    }
+}
+
+@media (max-width: 350px) {
+
+    .cabecalho__menu__link {
+        font-size: 1rem; /*24px*/
+    }
+    .apresentacao__links_navegacao {
+        font-size: 1rem;
+    }
+}
