@@ -5,46 +5,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-/* ATALHO PARA COMENTAR CTRL + K + C */
-
-/*Variáveis no css
-
-Há dois tipos de escopo global e local, em que a global você pode usar em todo os blocos css, já o local
-você define dentro de uma classe/bloco css e a variável irá funcionar apenas lá, naquele bloco
-
-forma de declarar variável:
-A variável precisa ser declarada com um hífen duplo (--) no início, para que seja reconhecida como 
-variável e não como propriedade CSS.
---nome-da-variavel
-*/
-
-
-/* :root define que as variáveis dentro dele serão globais
-caso desejemos criar uma variável local, no local do root escrevemos o nome da classe/bloco que está variável
-irá funcionar */
-
-
-/*valores palete:
-0A1D56 ~ azul escuro
-#170133 ~ roxo escuro
-37B5B6 ~ azul claro
-F2F597 ~ amarelo
-*/
 :root { 
     --cor-padrao-background: #170133;
     --cor-padrao-fonte: #8CABFF;
     --cor-padrao-destaque: rgb(13, 175, 224);
 }
 
-
-
-/*Há uma configuração de estilo padrão quando criamos o site, assim sendo, escrevemos os
-comandos abaixo, que servem para resetar/tirar este estilo padrão de todos(*) os elementos 
-------
-Para resetar os padrões dos navegadores de forma simples utilizamos as propriedades margin, 
-que define a área de margem nos quatro lados do elemento (cima, direita, baixo, esquerda), 
-e padding, que define a área de preenchimento interna nos mesmos quatro lados do elemento, 
-ambas com valor igual à 0.*/
 * {
     margin: 0;
     padding: 0;
