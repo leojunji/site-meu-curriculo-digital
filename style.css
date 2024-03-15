@@ -67,10 +67,10 @@ body {
     color: var(--cor-padrao-fonte);
 }
 
-/* cabecalho */
+/* menu */
 
 
-.cabecalho {
+.menu {
     /* padding: [top] [right] [bottom] [left]  ou  padding: [padding vertical] [padding horizontal] 
     O ideal é usar porcentagem, pois ai é por exemplo 2% do tamanho da tela do dispositivo do usuário */
     padding: 2% 0 0 0%;
@@ -81,8 +81,8 @@ body {
 }
 
 /* Sempre colocar o display flex no elemento pai, por exemplo, se eu quero display flex no 
-.cabecalho__menu__link então eu coloco display flex no .cabecalho__menu */
-.cabecalho__menu {
+.cabecalho__menu__link então eu coloco display flex no .menu__topics */
+.menu__topics {
     display: flex;
     gap: 80px;
 }
@@ -125,7 +125,7 @@ body {
     gap: 82px; /*espaços entre os filhos da classe presentation, só é possível ter espaço pois o space-between está ativado*/
 }
 
-.apresentacao__conteudo {
+.presentation__content {
     /*aqui os conteudos vão ocupar 50% do elemento pai*/
     width: 50%;
     font-family: 'Montserrat', sans-serif;
@@ -136,17 +136,17 @@ body {
     
 }
 
-.texto-destaque {
+.text__user_name {
     color: var(--cor-padrao-destaque);
     
 }
 
-.apresentacao__conteudo__texto {
+.presentation__content__text {
     font-size: 1.5rem; /*=24px*/
     font-family: 'Krona One', sans-serif;
 }
 
-.apresentacao__links {
+.presentation__links {
     /*Aplica o flexbox nos filhos(<a>) desta div*/
     display: flex;
     flex-direction: column;
@@ -157,14 +157,14 @@ body {
     gap: 32px;
 }
 
-.apresentacao__links_subtitulo {
+.presentation__links__subtitle {
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
     font-size: 1.5rem; /*=24px*/
 }
 
 /* botoes das redes sociais de contato */
-.apresentacao__links_navegacao {
+.presentation__links__navigation {
     display: flex;
     /*vai deixar os itens no centro*/
     justify-content: center;
@@ -191,7 +191,7 @@ body {
     font-size: 1.5rem; /*=28px*/
 
 }
-.apresentacao__links_navegacao:hover {
+.presentation__links__navigation:hover {
     color: var(--cor-padrao-destaque);
     font-size: 1.75rem; /*=28px*/
     border-width: 0px;
@@ -199,16 +199,16 @@ body {
 }
 
 
-/* rodape */
+/* about_developer */
 
 
-.apresentacao__imagem {
+.presentation__image {
     width: 50%;
 }
 
 
 
-.rodape {
+.about_developer {
     color: var(--cor-padrao-background);
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
@@ -216,7 +216,7 @@ body {
     border-radius: 8px; 
     text-align: center;
 }
-.rodape__desenvolvedor__link {
+.about_developer__link {
     text-decoration: none;
     color: var(--cor-padrao-fonte);
     font-weight: 600;
@@ -225,7 +225,7 @@ body {
     padding: 24px; /*distancia entre o texto e a borda*/
 
 }
-/* .rodape__desenvolvedor__link:hover {
+/* .about_developer__link:hover {
     color: var(--cor-padrao-destaque);
 } */
 
@@ -236,12 +236,12 @@ column: os elementos a direita vaão para baixo, o reverse faz eles irem para ci
         background-color: #170133;
     }
 
-    .cabecalho {
+    .menu {
         padding: 10%;
     }
 
-    .cabecalho__menu {
-        /*o display flex já foi declarado no cabecalho__menu fora do @media, assim o display flex aplica aqui automaticamente*/
+    .menu__topics {
+        /*o display flex já foi declarado no menu__topics fora do @media, assim o display flex aplica aqui automaticamente*/
         justify-content: center;
     }
     
@@ -250,8 +250,8 @@ column: os elementos a direita vaão para baixo, o reverse faz eles irem para ci
         padding: 5%;
     } 
 
-    .apresentacao__conteudo {
-        /*width corresponde a largura da apresentacao__conteudo, assim sendo se colocar:
+    .presentation__content {
+        /*width corresponde a largura da presentation__content, assim sendo se colocar:
         width: 0;
         indica que não existe largura, assim o conteúdo de dentro vai transbordar, agora se você colocar
         width: 100%; 
@@ -260,11 +260,11 @@ column: os elementos a direita vaão para baixo, o reverse faz eles irem para ci
         indica que ela vai ocupar a tela por completo; 100% é igual a auto*/
         width: 100%;
     }
-    .apresentacao__links {
+    .presentation__links {
         gap: 39px;
     }
     
-    .rodape {
+    .about_developer {
         background-color: var(--cor-padrao-background);
     }
 }
@@ -274,7 +274,7 @@ column: os elementos a direita vaão para baixo, o reverse faz eles irem para ci
     .cabecalho__menu__link {
         font-size: 1rem; /*24px*/
     }
-    .apresentacao__links_navegacao {
+    .presentation__links__navigation {
         font-size: 1rem;
     }
 }
