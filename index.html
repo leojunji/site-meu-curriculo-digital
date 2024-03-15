@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--rel = indica a relação entre este html e o outro arquivo-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+
+    <header class="cabecalho">
+        <!--dentro da nav vai ficar os links do menu-->
+        <nav class="cabecalho__menu">
+            <a href="./index.html" class="cabecalho__menu__link">Home</a>
+            <a href="./about.html" class="cabecalho__menu__link">Sobre mim</a>
+        </nav>
+    </header>
+
+
+    <main class="apresentacao">
+        <!--section = vai transformar todos os elementos dentro dele em um só, assim 
+        por exemplo no flexbox essa section e todos os elementos dentro dele serão considerados 
+        apenas um filho
+        class = nomeclatura neste caso é nomeDoElementoPai__nomeDoElementoFilho-->
+        <section class="apresentacao__conteudo">
+            
+
+            <p class="apresentacao__conteudo__texto">
+                Olá, meu nome é 
+                <strong class="texto-destaque"> Leonardo Mukuno</strong>
+                
+                , 
+                estou cursando Engenharia de software 
+                na PUCPR e no momento estou buscando uma 
+                estágio na área de programação com o objetivo 
+                de aprimorar meus conhecimentos nesse campo.
+            </p>
+
+                <!--div = usado geralmente para questões muito específicas, onde queremos agrupar por
+                exemplo uma pequeno grupo de botões-->
+                <div class="apresentacao__links">
+                    <h2 class="apresentacao__links_subtitulo">Minhas redes:</h2>
+                    <!--<a> = ancora, ou seja, é um link para outro site-->  
+
+                    <a class="apresentacao__links_navegacao" href="https://github.com/leojunji">
+                        <img src="./assets/Logo Github.png"> GitHub
+                    </a>
+
+                    <a class="apresentacao__links_navegacao" href="https://www.linkedin.com/in/leonardo-junji-494a43180">
+                        <img src="./assets/Logo linkedin.png"> Linkedin
+                    </a>
+
+                    <a class="apresentacao__links_navegacao" href="mailto:leonjunji@outlook.com">
+                        <img src="./assets/outlook_logo.png"> Outlook
+                    </a>
+
+                    <a class="apresentacao__links_navegacao" href="https://api.whatsapp.com/send?phone=41991645103">
+                        <img src="./assets/whats_logo.png"> Whatsapp
+                    </a>
+                </div>
+        </section>
+
+
+
+        <img class="apresentacao__imagem" src="./assets/Imagem_joana_santos_programando.svg" alt="Foto da Joana Santos programando">
+
+            
+
+
+    </main>
+
+
+    
+    <footer class="rodape">
+        <a class="rodape__desenvolvedor__link" >
+        Desenvolvido por leojunji@outlook.com
+        </a>
+    </footer>
+</body>
+
+</html>
