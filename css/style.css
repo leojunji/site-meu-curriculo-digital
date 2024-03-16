@@ -244,6 +244,10 @@ column: os elementos a direita vaão para baixo, o reverse faz eles irem para ci
     .about_developer {
         background-color: var(--color-background-body);
     }
+
+    .presentation__links__navigation {
+        font-size: 1rem;
+    }
 }
 
 
