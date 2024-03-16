@@ -158,6 +158,9 @@ body {
         padding: 20px 50px;
     }
     
+    .curriculum {
+        width: auto;
+    }
 
     .curriculum__text {
         padding: 10px;
