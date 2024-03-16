@@ -4,5 +4,5 @@ Este aqui é o repositório do **MeuCurriuculoDigital**, que é basicamente meu 
 
 Você também pode acessar o site através do link:
 
-[MeuCurriuculoDigital]()
+[MeuCurriuculoDigital](https://meu-curriculo-digital.vercel.app/about.html)
 
