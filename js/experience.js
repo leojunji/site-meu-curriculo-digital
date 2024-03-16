@@ -58,9 +58,17 @@ function showAllExperiences() {
   }
 }
 
+function updateTittleExperience() {
+  curriculumTittle.innerHTML = "";
+  let tittle = document.createElement('h1');
+  tittle.textContent = "Experiências";
+  curriculumTittle.appendChild(tittle);
+}
+
 let experienceButton = document.querySelector('.experience_button');
 
 experienceButton.onclick = function() {
+  updateTittleExperience();
   curriculumText.innerHTML = "";
   showAllExperiences();
 }

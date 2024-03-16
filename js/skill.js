@@ -103,12 +103,21 @@ function showAllSkills() {
   }
 }
 
+function updateTittleSkill() {
+  curriculumTittle.innerHTML = "";
+  let tittle = document.createElement('h1');
+  tittle.textContent = "Skills";
+  console.log(tittle.classList);
+  curriculumTittle.appendChild(tittle);
+}
 
+updateTittleSkill();
 showAllSkills();
 
 const skillButton = document.querySelector('.skill_button');
 
 skillButton.onclick = function() {
+  updateTittleSkill();
   curriculumText.innerHTML = "";
   showAllSkills();
 }

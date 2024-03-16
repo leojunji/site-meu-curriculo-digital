@@ -183,6 +183,10 @@ body {
     .page_button.top {
         display: block;
     }
+
+    .curriculum__tittle h1 {
+        font-size: 1.8rem;
+    }
   
 }
 

@@ -41,11 +41,20 @@ function createLanguageSection(language) {
       displayLanguage(languagesData[i],curriculumText)
     }
   }
+
+
+  function updateTittleLanguage() {
+    curriculumTittle.innerHTML = "";
+    let tittle = document.createElement('h1');
+    tittle.textContent = "Idiomas";
+    console.log(tittle.classList);
+    curriculumTittle.appendChild(tittle);
+  }
   
   let languageButton = document.querySelector('.language_button');
   
   languageButton.onclick = function() {
-    console.log(createLanguageSection(languagesData[0]));
+    updateTittleLanguage();
     curriculumText.innerHTML = "";
     showAllLanguages();
   }
