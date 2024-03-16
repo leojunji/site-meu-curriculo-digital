@@ -6,9 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root { 
-    --cor-padrao-background: #170133;
-    --cor-padrao-fonte: #8CABFF;
-    --cor-padrao-destaque: rgb(13, 175, 224);
+    --color-background-body: #170133;
+    --color-font-body: #8CABFF;
+    --color-featured: rgb(13, 175, 224);
 }
 
 * {
@@ -27,10 +27,10 @@ body {
     box-sizing: border-box;*/
 
 
-    /*cor do fundo do body, neste caso ele está utilizando a variável global --cor-padrao-background*/
-    background-color: var(--cor-padrao-background);
+    /*cor do fundo do body, neste caso ele está utilizando a variável global --color-background-body*/
+    background-color: var(--color-background-body);
     /*cor das letras*/
-    color: var(--cor-padrao-fonte);
+    color: var(--color-font-body);
 }
 
 /* -------------------------------- */
@@ -62,7 +62,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem; /*24px*/
     font-weight: 600;
-    color: var(--cor-padrao-destaque);
+    color: var(--color-featured);
 
 }
 
@@ -105,14 +105,14 @@ body {
     
 }
 
-.text__user_name {
-    color: var(--cor-padrao-destaque);
-    
-}
-
 .presentation__content__text {
     font-size: 1.5rem; /*=24px*/
     font-family: 'Krona One', sans-serif;
+}
+
+.text__user_name {
+    color: var(--color-featured);
+    
 }
 
 .presentation__links {
@@ -140,7 +140,7 @@ body {
     /*espaço entre os itens*/
     gap: 16px;
     /* border = [tamanho da borda] [tracejado/estilo da borda] [cor da borda] */
-    border: 2px groove var(--cor-padrao-destaque);
+    border: 2px groove var(--color-featured);
     /* largura do background */
     width: 50%;
     /* alinha o texto */
@@ -154,14 +154,14 @@ body {
     /*tira o sublinhado do link*/
     text-decoration: none;
     /*cor das letras*/
-    color: var(--cor-padrao-fonte);
+    color: var(--color-font-body);
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem; /*=28px*/
 
 }
 .presentation__links__navigation:hover {
-    color: var(--cor-padrao-destaque);
+    color: var(--color-featured);
     font-size: 1.75rem; /*=28px*/
     border-width: 0px;
     width: 310px;
@@ -181,16 +181,16 @@ body {
 
 
 .about_developer {
-    color: var(--cor-padrao-background);
+    color: var(--color-background-body);
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--cor-padrao-background);
+    background-color: var(--color-background-body);
     border-radius: 8px; 
     text-align: center;
 }
 .about_developer__text {
     text-decoration: none;
-    color: var(--cor-padrao-fonte);
+    color: var(--color-font-body);
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     transition: color 0.3s; /* Adiciona uma transição para a propriedade de cor */
@@ -198,7 +198,7 @@ body {
 
 }
 /* .about_developer__text:hover {
-    color: var(--cor-padrao-destaque);
+    color: var(--color-featured);
 } */
 
 
@@ -242,7 +242,7 @@ column: os elementos a direita vaão para baixo, o reverse faz eles irem para ci
     }
     
     .about_developer {
-        background-color: var(--cor-padrao-background);
+        background-color: var(--color-background-body);
     }
 }
 
