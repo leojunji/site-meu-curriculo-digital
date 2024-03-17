@@ -32,8 +32,13 @@ function createExperienceSection(experience) {
 
   let paragraphCompany = document.createElement('p'); //criando <p> para company
   paragraphCompany.className = 'company';
-  let tempCompany = `Empresa: ${experience.company} - (${experience.startDate.getMonth()}/${experience.startDate.getFullYear()}-${experience.endDate.getMonth()}/${experience.endDate.getFullYear()})`
-  paragraphCompany.textContent = tempCompany;
+  let temp  = `Empresa: ${experience.company}`
+  paragraphCompany.textContent = temp;
+
+  let paragraphDates = document.createElement('p'); //criando <p> para company
+  paragraphDates.className = 'date';
+  temp = `(${experience.startDate.getMonth()}/${experience.startDate.getFullYear()} - ${experience.endDate.getMonth()}/${experience.endDate.getFullYear()})`
+  paragraphDates.textContent = temp;
 
   let paragraphActivities = document.createElement('p'); //criando <p> para activities
   paragraphActivities.className = 'details';
@@ -41,7 +46,9 @@ function createExperienceSection(experience) {
 
   curriculumTextExperience.appendChild(tittleRole);
   curriculumTextExperience.appendChild(paragraphCompany);
+  curriculumTextExperience.appendChild(paragraphDates);
   curriculumTextExperience.appendChild(paragraphActivities);
+  
   
 
   return curriculumTextExperience;
