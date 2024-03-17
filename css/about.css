@@ -84,6 +84,7 @@ body {
     
     /* justify-content: space-between; */
     font-size: 1.2rem; /*=24px*/
+   
 }
 
 .curriculum__tittle {
@@ -112,36 +113,17 @@ body {
 
 .curriculum__text__unit {
     background-color: rgb(236, 206, 172);
-}
-
-/*configuração geral para os botões*/
-.page_button {
-    margin: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3px; /*gap for each topic inside a unit(ex: gap between topics for experience (role, company, startDate-endDate and activities))*/
     
 }
 
-.page_button button {
-    
-    width: 70px; /* Defina a largura desejada */
-    height: 70px; /* Defina a altura desejada */
-    border-radius: 50%; /* Isso faz com que as bordas sejam arredondadas, tornando o botão circular */
-    background-color: var(--cor-padrao-background); /* Cor de fundo do botão */
-    color: var(--cor-padrao-fonte); /* Cor do texto dentro do botão */
-    text-align: center; /* Centraliza o texto dentro do botão */
-    line-height: 50px; /* Centraliza verticalmente o texto */
-    text-decoration: none; /* Remove a sublinhado padrão para links */
-    display: inline-block; /* Permite definir largura e altura no elemento */
-    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
-    font-size: 0.8rem;
-}
+/*specific topics*/
 
 
-.page_button.top {
-    display: none;
-    
-}
-
-/*configuração específica para os botões de cima, que aparacem em telas menores*/
 
 
 
@@ -168,22 +150,6 @@ body {
         
     }
     
-
-    .page_button_phone {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-    }
-    
-    .page_button.side {
-        display: none;
-    }
-
-    .page_button.top {
-        display: block;
-    }
-
     .curriculum__tittle h1 {
         font-size: 1.8rem;
     }
