@@ -4,16 +4,13 @@ let experiencesData = [
       company: 'Pumatronix', 
       activities: 'Tinha a responsabilidade de assegurar o funcionamento dos ' +
        'servidores da empresa. Além disso, era responsável pela documentação dos projetos de TI ' +
-      'da empresa e pela manutenção e inventário dos equipamentos de TI utilizados pelos' +
+      'da empresa e pela manutenção e inventário dos equipamentos de TI utilizados pelos ' +
       'funcionários.',
     },
     {
       role: 'Suporte de TI', //1
       company: 'IMAP', 
-      activities: 'Tinha a responsabilidade de assegurar o funcionamento dos ' +
-       'servidores da empresa. Além disso, era responsável pela documentação dos projetos de TI ' +
-      'da empresa e pela manutenção e inventário dos equipamentos de TI utilizados pelos ' +
-      'funcionários.',
+      activities: ' Tinha a responsabilidade de garantir o funcionamento de computadores, ferramentas, equipamentos e sistemas de TI utilizados pelos funcionários.',
     }
   ];
   
