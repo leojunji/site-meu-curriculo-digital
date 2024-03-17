@@ -12,7 +12,7 @@ let experiencesData = [
       company: 'IMAP', 
       activities: 'Tinha a responsabilidade de assegurar o funcionamento dos ' +
        'servidores da empresa. Além disso, era responsável pela documentação dos projetos de TI ' +
-      'da empresa e pela manutenção e inventário dos equipamentos de TI utilizados pelos' +
+      'da empresa e pela manutenção e inventário dos equipamentos de TI utilizados pelos ' +
       'funcionários.',
     }
   ];
