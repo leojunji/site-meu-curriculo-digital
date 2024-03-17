@@ -107,7 +107,6 @@ function updateTittleSkill() {
   curriculumTittle.innerHTML = "";
   let tittle = document.createElement('h1');
   tittle.textContent = "Skills";
-  console.log(tittle.classList);
   curriculumTittle.appendChild(tittle);
 }
 
