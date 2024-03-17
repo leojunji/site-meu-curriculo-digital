@@ -2,6 +2,8 @@ let experiencesData = [
     {
       role: 'Estágio em TI ', //0
       company: 'Pumatronix', 
+      startDate: new Date(2022,10),
+      endDate: new Date(2023,7),
       activities: 'Tinha a responsabilidade de assegurar o funcionamento dos ' +
        'servidores da empresa. Além disso, era responsável pela documentação dos projetos de TI ' +
       'da empresa e pela manutenção e inventário dos equipamentos de TI utilizados pelos ' +
@@ -10,6 +12,8 @@ let experiencesData = [
     {
       role: 'Suporte de TI', //1
       company: 'IMAP', 
+      startDate: new Date(2022,3),
+      endDate: new Date(2022,10),
       activities: ' Tinha a responsabilidade de garantir o funcionamento de computadores, ferramentas, equipamentos e sistemas de TI utilizados pelos funcionários.',
     }
   ];
@@ -28,7 +32,8 @@ function createExperienceSection(experience) {
 
   let paragraphCompany = document.createElement('p'); //criando <p> para company
   paragraphCompany.className = 'company';
-  paragraphCompany.textContent = experience.company;
+  let tempCompany = `Empresa: ${experience.company} - (${experience.startDate.getMonth()}/${experience.startDate.getFullYear()}-${experience.endDate.getMonth()}/${experience.endDate.getFullYear()})`
+  paragraphCompany.textContent = tempCompany;
 
   let paragraphActivities = document.createElement('p'); //criando <p> para activities
   paragraphActivities.className = 'details';
