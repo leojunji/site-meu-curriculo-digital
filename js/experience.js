@@ -77,6 +77,8 @@ function updateTittleExperience() {
 let experienceButton = document.querySelector('.experience_button');
 
 experienceButton.onclick = function() {
+  removeActive();
+  experienceButton.classList.add('active');
   updateTittleExperience();
   curriculumText.innerHTML = "";
   showAllExperiences();

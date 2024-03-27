@@ -54,6 +54,8 @@ function createLanguageSection(language) {
   let languageButton = document.querySelector('.language_button');
   
   languageButton.onclick = function() {
+    removeActive();
+    languageButton.classList.add('active');
     updateTittleLanguage();
     curriculumText.innerHTML = "";
     showAllLanguages();

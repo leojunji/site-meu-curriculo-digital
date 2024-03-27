@@ -110,12 +110,19 @@ function updateTittleSkill() {
   curriculumTittle.appendChild(tittle);
 }
 
-updateTittleSkill();
-showAllSkills();
-
 const skillButton = document.querySelector('.skill_button');
 
+
+//initial values
+updateTittleSkill();
+showAllSkills();
+skillButton.classList.add('active');
+
+
+
 skillButton.onclick = function() {
+  removeActive();
+  skillButton.classList.add('active');
   updateTittleSkill();
   curriculumText.innerHTML = "";
   showAllSkills();

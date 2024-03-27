@@ -41,8 +41,8 @@ body {
     padding: 10px 20px; /* Espaçamento interno */
     border: none; /* Remover borda */
     border-radius: 30px; /* Cantos arredondados para fazer parecer uma pílula */
-    background-color:  rgb(175, 107, 175); /* Cor de fundo */
-    color: white; /* Cor do texto */
+    background-color: var(--cor-padrao-background); /* Cor de fundo */
+    color: var(--color-font-body); /* Cor do texto */
     text-align: center; /* Alinhamento do texto */
     text-decoration: none; /* Remover sublinhado */
     display: inline-block; /* Exibir como bloco */
@@ -50,8 +50,9 @@ body {
     cursor: pointer; /* Cursor ao passar o mouse */
   }
   
-  .topic:hover {
-    background-color: var(--cor-padrao-background); /* Mudar a cor de fundo quando o mouse passar por cima */
+  .active {
+    background-color: rgb(175, 107, 175);
+    color: var(--color-font-curriculum);
   }
   
 
@@ -113,6 +114,9 @@ body {
 
 .curriculum__text__unit {
     background-color: rgb(236, 206, 172);
+    border: 2px solid rgb(236, 206, 172);
+    padding: 10px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
