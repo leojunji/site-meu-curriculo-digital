@@ -132,6 +132,14 @@ body {
     font-size: 1.5rem; /*=24px*/
 }
 
+/*imagem logo dos links de contato*/
+
+.links_logo {
+    width: 1.7rem;
+}
+
+
+
 /* botoes das redes sociais de contato */
 .presentation__links__navigation {
     display: flex;
@@ -150,7 +158,7 @@ body {
     /*
     padding: [eixo vertical] [eixo horizontal] 
     */
-    padding: 21.5px 0px; /*21.5*/
+    padding: 20px; /*21.5*/
     /*tira o sublinhado do link*/
     text-decoration: none;
     /*cor das letras*/
