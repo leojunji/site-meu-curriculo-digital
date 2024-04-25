@@ -1,0 +1,11 @@
+{
+  "name": "site-meu-curriculo-digital",
+  "version": "1.0.0",
+  "description": "site portfólio criado por leojunji@outlook.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leonardo Mukuno",
+  "license": "ISC"
+}
