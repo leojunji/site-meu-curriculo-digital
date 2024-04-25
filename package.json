@@ -1,11 +1,15 @@
 {
   "name": "site-meu-curriculo-digital",
-  "version": "1.0.0",
-  "description": "site portfólio criado por leojunji@outlook.com",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "author": "Leonardo Mukuno",
-  "license": "ISC"
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
 }
