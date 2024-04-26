@@ -44,6 +44,23 @@ let skillsData = [
   },
 ];
 
+async function buscar() {
+  try {
+    console.log(
+      "><><><><><><><><><><><" +
+        JSON.stringify(
+          await axios.get(
+            "https://gist.githubusercontent.com/leojunji/d00b82987955da9032951a0fcf4cd666/raw/345bb2228a29cc8be6881dbe2029a849a95d0d6c/skill.txt"
+          )
+        )
+    );
+  } catch (error) {
+    console.log("ERRO: " + error);
+  }
+}
+
+buscar();
+
 function createSkillSection(skill) {
   let curriculumText_skill = document.createElement("section"); //criando <section>
   curriculumText_skill.className = "curriculum__text__unit skill";
