@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", //JS version to be compiled,
+    "outDir": "./dist/js/", //the TS files(src/**/*) will be placed in a subfolder called js(dist/js)
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "noEmitOnError": true, //The TS file must have NO ERRORS to be converted to an JS file
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "./src/**/*" //local of TS files
+  ]
+}
