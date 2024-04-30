@@ -20,6 +20,10 @@ let experiencesData = [
   },
 ];
 
+const curriculumText = document.querySelector(".curriculum__text");
+
+const curriculumTittle = document.querySelector(".curriculum__tittle");
+
 //cria a section curriculum__text__experience
 function createExperienceSection(experience) {
   let curriculumTextExperience = document.createElement("section"); //criando <section>

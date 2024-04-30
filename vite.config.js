@@ -1,10 +1,14 @@
-// vite.config.js
 import { defineConfig } from "vite";
+import { resolve } from "path";
 
 export default defineConfig({
+  base: "/", // Define a base URL como raiz do projeto
   build: {
-    outDir: "dist", // built files will be placed in dist
-    assetsDir: "assets", //assests(src/assets) will be placed in assets(dist/assests)
-    emptyOutDir: false,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        about: resolve(__dirname, "src/about/index.html"),
+      },
+    },
   },
 });

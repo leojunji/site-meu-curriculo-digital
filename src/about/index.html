@@ -8,20 +8,16 @@
     <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/about.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-
-    <script src="/main.js" defer></script>
-    <script src="/skill.js" defer></script>
-    <script src="/experience.js" defer></script>
-    <script src="/language.js" defer></script>
+    <script type="module"></script>
   </head>
   <body>
     <header class="menu">
       <!--nav contains menu links-->
       <nav class="menu__topics">
         <a href="/index.html" class="menu__topics__topic">Home</a>
-        <a href="/about.html" class="menu__topics__topic">Sobre mim</a>
+        <a href="/src/about/index.html" class="menu__topics__topic"
+          >Sobre mim</a
+        >
       </nav>
 
       <div class="topics">
@@ -84,5 +80,6 @@
     <footer class="about_developer">
       <p class="about_developer__text">Desenvolvido por leojunji@outlook.com</p>
     </footer>
+    <script type="module" src="/src/app.ts"></script>
   </body>
 </html>

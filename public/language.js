@@ -1,62 +1,55 @@
 let languagesData = [
-    {
-      language: 'Inglês', //0
-      level: 'Avançado',
-    }
+  {
+    language: "Inglês", //0
+    level: "Avançado",
+  },
 ];
 
+const curriculumText = document.querySelector(".curriculum__text");
+
+const curriculumTittle = document.querySelector(".curriculum__tittle");
 
 function createLanguageSection(language) {
+  let curriculumTextLanguage = document.createElement("section"); //criando <section>
+  curriculumTextLanguage.className = "curriculum__text__unit language";
 
+  let tittle = document.createElement("h2");
+  tittle.textContent = language.language;
 
-    let curriculumTextLanguage = document.createElement('section'); //criando <section>
-    curriculumTextLanguage .className = 'curriculum__text__unit language';
-  
-    let tittle = document.createElement('h2');
-    tittle.textContent = language.language;
-  
-    let languageLevel = document.createElement('h3'); 
-    languageLevel.className = 'level';
-    languageLevel.textContent = language.level;
-  
-    curriculumTextLanguage.appendChild(tittle);
-    curriculumTextLanguage.appendChild(languageLevel);
-    
-  
-    return curriculumTextLanguage ;
-  
-  };
+  let languageLevel = document.createElement("h3");
+  languageLevel.className = "level";
+  languageLevel.textContent = language.level;
 
+  curriculumTextLanguage.appendChild(tittle);
+  curriculumTextLanguage.appendChild(languageLevel);
 
- 
+  return curriculumTextLanguage;
+}
 
+function displayLanguage(language, parentElement) {
+  parentElement.appendChild(createLanguageSection(language));
+}
 
-  function displayLanguage(language, parentElement) {
-  
-    parentElement.appendChild(createLanguageSection(language));
-  };
-  
-  function showAllLanguages() {
-    for (let i  = 0; i < languagesData.length; i++) {
-      displayLanguage(languagesData[i],curriculumText)
-    }
+function showAllLanguages() {
+  for (let i = 0; i < languagesData.length; i++) {
+    displayLanguage(languagesData[i], curriculumText);
   }
+}
 
+function updateTittleLanguage() {
+  curriculumTittle.innerHTML = "";
+  let tittle = document.createElement("h1");
+  tittle.textContent = "Idiomas";
+  console.log(tittle.classList);
+  curriculumTittle.appendChild(tittle);
+}
 
-  function updateTittleLanguage() {
-    curriculumTittle.innerHTML = "";
-    let tittle = document.createElement('h1');
-    tittle.textContent = "Idiomas";
-    console.log(tittle.classList);
-    curriculumTittle.appendChild(tittle);
-  }
-  
-  let languageButton = document.querySelector('.language_button');
-  
-  languageButton.onclick = function() {
-    removeActive();
-    languageButton.classList.add('active');
-    updateTittleLanguage();
-    curriculumText.innerHTML = "";
-    showAllLanguages();
-  }
+let languageButton = document.querySelector(".language_button");
+
+languageButton.onclick = function () {
+  removeActive();
+  languageButton.classList.add("active");
+  updateTittleLanguage();
+  curriculumText.innerHTML = "";
+  showAllLanguages();
+};
