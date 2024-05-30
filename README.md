@@ -18,9 +18,9 @@ Requisitos do projeto:
 
 - É necessário ter o [node](https://www.alura.com.br/artigos/node-js) instalado em sua máquina
 
-Ao acessá-lo pela primeira vez, digite os seguintes comandos no seu terminal (ex: CMD do Windows):
+Ao acessá-lo pela primeira vez, digite os seguintes comandos no seu terminal (e.g. CMD do Windows):
 
-1. Navegar até o diretório do projeto através do terminal (exemplo de comando para Windows)
+1. Navegar até o diretório do projeto através do terminal (e.g. de comando para Windows)
 
 ```bash
 cd <meu-projeto>
