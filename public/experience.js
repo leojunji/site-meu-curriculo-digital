@@ -11,7 +11,7 @@ let experiencesData = [
       "funcionários.",
   },
   {
-    role: "Suporte de TI", //1
+    role: "Estágio em Suporte de TI", //1
     company: "IMAP",
     startDate: new Date(2022, 3),
     endDate: new Date(2022, 10),
