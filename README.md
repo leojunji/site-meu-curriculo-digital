@@ -20,7 +20,7 @@ Requisitos do projeto:
 
 Ao acessá-lo pela primeira vez, digite os seguintes comandos no seu terminal (ex: CMD do Windows):
 
-1. Navegar até o diretório do projeto através do terminal
+1. Navegar até o diretório do projeto através do terminal ( exemplo de comando para Windows)
 
 ```bash
 cd <meu-projeto>
