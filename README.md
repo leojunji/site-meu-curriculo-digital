@@ -16,14 +16,14 @@ Após instalar o projeto, veja abaixo como rodar ele:
 
 Requisitos do projeto:
 
-- É necessário ter o node.js instalado em sua máquina
+- É necessário ter o [node](https://www.alura.com.br/artigos/node-js) instalado em sua máquina
 
 Ao acessá-lo pela primeira vez, digite os seguintes comandos no seu terminal (ex: CMD do Windows):
 
 1. Navegar até o diretório do projeto através do terminal
 
 ```bash
-cd meu-projeto
+cd <meu-projeto>
 ```
 
 2. Instalar as dependências
