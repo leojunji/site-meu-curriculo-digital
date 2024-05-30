@@ -48,7 +48,7 @@ npm run dev
 
 1. Instalar o [git](https://www.alura.com.br/artigos/o-que-e-git-github#:~:text=Acesse%20o%20site%20oficial%20do%20Git%20em%20%22https%3A%2F%2Fgit-scm.com%2Fdownload%2Fwin%22.,n%C3%A3o%20for%20um%20usu%C3%A1rio%20avan%C3%A7ado.%20Conclua%20a%20instala%C3%A7%C3%A3o.) no seu computador
 
-Digite os seguintes comandos no seu terminal:
+Digitar o seguinte comando no seu terminal:
 
 2. Clonar o repositório
 
