@@ -1,6 +1,6 @@
 # Apresentação
 
-![image](https://github.com/leojunji/representacao-ditatica-mapeamento-direto-e-associativo/assets/74514993/3910bb81-2d79-4c4d-ba3c-7a717ba3a1ff)
+![image](https://github.com/leojunji/site-meu-curriculo-digital/assets/74514993/53d66920-6967-4fe3-9343-ef237d17fc81)
 
 Este aqui é o repositório do **MeuCurriuculoDigital**, que é meu site de apresentação criado em React. Nele eu coloco minhas informações profissionais, experiências e conhecimentos.
 
@@ -46,9 +46,11 @@ npm run dev
 
 ### Instalação do projeto via git
 
+Passo a passo da instalação:
+
 1. Instalar o [git](https://www.alura.com.br/artigos/o-que-e-git-github#:~:text=Acesse%20o%20site%20oficial%20do%20Git%20em%20%22https%3A%2F%2Fgit-scm.com%2Fdownload%2Fwin%22.,n%C3%A3o%20for%20um%20usu%C3%A1rio%20avan%C3%A7ado.%20Conclua%20a%20instala%C3%A7%C3%A3o.) no seu computador
 
-Digite o seguinte comando no seu terminal:
+Após instalar, digite o seguinte comando no seu terminal:
 
 2. Clonar o repositório
 
