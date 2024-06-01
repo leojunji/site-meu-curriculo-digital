@@ -1,6 +1,6 @@
 # Apresentação
 
-![image](https://github.com/leojunji/site-meu-curriculo-digital/assets/74514993/fe13e11b-8f27-449a-abe7-1df97bfc9d1e)
+![image](https://github.com/leojunji/representacao-ditatica-mapeamento-direto-e-associativo/assets/74514993/3910bb81-2d79-4c4d-ba3c-7a717ba3a1ff)
 
 Este aqui é o repositório do **MeuCurriuculoDigital**, que é meu site de apresentação criado em React. Nele eu coloco minhas informações profissionais, experiências e conhecimentos.
 
