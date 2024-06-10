@@ -1,0 +1,15 @@
+@import "/src/vars.css";
+
+.networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.networks-tittle {
+  color: var(--font-color-primary);
+  font-family: var(--font-family-menu);
+  margin: 24px;
+  font-size: 1.2rem;
+}

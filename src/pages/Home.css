@@ -1,0 +1,34 @@
+@import "/src/vars.css";
+
+.home {
+  background-color: var(--background-color); /* var(--background-color) */
+  flex-direction: column;
+  padding: 5% 8%;
+}
+
+.home .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .home .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .home .content {
+    margin: 0;
+    padding: 0.2rem;
+  }
+}

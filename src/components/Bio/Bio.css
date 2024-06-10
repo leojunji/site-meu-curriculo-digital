@@ -1,0 +1,28 @@
+@import "/src/vars.css";
+
+.bio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--background-color);
+  margin: 24px;
+  font-size: 1.8rem; /*=24px*/
+  font-family: var(--font-family-main);
+  width: 100%;
+  color: var(--font-color-primary);
+}
+.bio p {
+  margin: 4px;
+}
+
+.bio strong {
+  color: var(--font-color-featured);
+}
+
+@media (max-width: 600px) {
+  .bio {
+    width: 100%;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+}

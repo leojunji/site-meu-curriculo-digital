@@ -1,0 +1,27 @@
+.skill .lists {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.skill .topic {
+  background-color: rgb(236, 206, 172);
+  border: 2px solid rgb(236, 206, 172);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  border-radius: 24px;
+  margin-top: 6px;
+}
+
+.skill .topic h3 {
+  margin: 3%;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.skill .topic ul {
+  list-style: disc; /* This ensures the bullets are circles */
+  padding-left: 20px; /* Add some padding to align the list items */
+}
+
+.skill .topic li {
+  font-size: 1.2rem;
+}

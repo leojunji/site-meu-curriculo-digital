@@ -1,0 +1,46 @@
+@import "/src/vars.css";
+
+.menu {
+  height: var(--menu-height);
+  display: flex;
+  position: fixed; /*can be used with top, right, left and bottom*/
+  /* this parameter below will stretch in the whole space at top, right and left */
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: flex-start;
+  background-color: var(--background-color);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.menu .topics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*when width became narrow, it will wrap, see media to see what happens*/
+  gap: 64px;
+  align-items: center;
+  margin-left: 64px;
+}
+
+.menu .topics a {
+  font-family: var(--font-family-menu);
+  font-size: var(--font-size-menu);
+  font-weight: var(--font-weight-menu);
+  color: var(--font-color-secondary);
+}
+
+.menu .topics a:hover {
+  color: var(--font-color-featured);
+}
+
+@media (max-width: 300px) {
+  .menu {
+    height: calc(var(--menu-height) * 2);
+  }
+
+  .menu .topics {
+    flex-direction: column;
+    justify-content: center;
+    gap: 54px;
+  }
+}
