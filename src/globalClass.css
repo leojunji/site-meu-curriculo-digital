@@ -1,0 +1,67 @@
+/*classNames : 
+
+
+formation:
+ <tagName>-<state>
+
+ e.g
+
+main-tertiary
+
+
+*/
+
+.main-default {
+  margin-top: var(
+    --menu-height
+  ); /*its the distance between the top and <Main />, and between them, there is the <Menu /> */
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 264px) {
+  .main-default {
+    margin-top: calc(var(--menu-height) * 2);
+  }
+}
+
+.curriculum-default {
+  color: var(--background-color);
+  background-color: var(--background-curriculum);
+  border: 2px solid var(--background-color);
+  border-radius: 12px;
+  width: 100%;
+  padding: 1% 3% 3% 3%;
+  font-family: var(--font-family-curriculum);
+}
+
+.curriculum-default .tittle {
+  display: flex;
+  /*é necessário usá-lo para centralizar o conteúdo, do contrário ele não vai ficar no centro. ele de certa forma define onde é o centro*/
+  flex-direction: column;
+  /*alinha o titulo <h1> no centro*/
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  margin: 2%;
+}
+
+@media (max-width: 800px) {
+  .curriculum-default {
+    font-size: 1rem;
+  }
+  .curriculum-default .tittle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .curriculum-default .topic h3 {
+    font-size: 1.2rem;
+  }
+}

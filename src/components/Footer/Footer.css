@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--background-color);
+  /*the app/html(father element) is:
+  display: flex;
+  min-heigth: 100vh;
+  so, usind margin-top: auto; here, will make the max distance possible between fotter and the element above. Considering that the min-heigth is 100vh in his parent(father element)
+  */
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--font-color-primary);
+  margin: 24px;
+}

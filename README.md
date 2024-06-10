@@ -1,8 +1,19 @@
+### Tecnologias utilizadas
+
+<p>
+  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" width="40" height="40"/>
+  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40"/>
+  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" width="40" height="40"/>
+  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" width="40" height="40"/>
+  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" width="40" height="40"/>
+  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg" width="40" height="40"/>
+</p>
+
 # Apresentação
 
 ![image](https://github.com/leojunji/site-meu-curriculo-digital/assets/74514993/53d66920-6967-4fe3-9343-ef237d17fc81)
 
-Este aqui é o repositório do **MeuCurriuculoDigital**, que é meu site de apresentação criado em React. Nele eu coloco minhas informações profissionais, experiências e conhecimentos.
+Este aqui é o repositório do **MeuCurriuculoDigital**. Nele eu coloco minhas informações profissionais, experiências e conhecimentos.
 
 Você também pode acessar o site através do link:
 

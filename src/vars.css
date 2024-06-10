@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+:root {
+  /*BACKGROUND
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  */
+  --background-color: #170133;
+  --background-curriculum: rgb(238, 209, 176);
+  --font-color-primary: #8cabff;
+  --font-color-secondary: #8cabff;
+  --font-color-featured: #50e3c2;
+  /*================================================================*/
+
+  /*MENU
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  */
+  --font-size-menu: 1rem;
+  --font-weight-menu: 600;
+  --menu-height: 8vh;
+  --font-family-menu: "Montserrat", sans-serif;
+  /*================================================================*/
+
+  /*MAIN
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  */
+  --font-family-main: "Krona One", sans-serif;
+  --font-family-curriculum: "Times", sans-serif;
+  /*================================================================*/
+}

@@ -1,0 +1,35 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.experience .topic {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(236, 206, 172);
+  border: 2px solid rgb(236, 206, 172);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  border-radius: 24px;
+  margin-top: 6px;
+  gap: 12px;
+}
+
+.experience .topic h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.experience .topic h3 {
+  font-size: 0.8 rem;
+  font-weight: 600;
+}
+
+.experience .topic h4 {
+  font-size: 0.8 rem;
+}
+
+.experience .topic p {
+  font-size: 0.8 rem;
+}
