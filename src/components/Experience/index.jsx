@@ -1,15 +1,12 @@
 /* eslint-disable react/prop-types */
 import "./Experience.css";
 import { useState, useEffect } from "react";
-import getDataLatestGist from "../GistContent";
-import Loading from "../Loading";
 
 const Experience = ({ name }) => {
   const tittle = `${name.split(" ")[0]}`;
 
   const experienceDataId = "d050de821f776e269c38c2f5223b1bc8";
   const keyForSessionStorage = "experiencesData";
-  const [isLoading, setIsLoading] = useState(false);
 
   const [experiences, setExperiences] = useState([]);
 
@@ -20,14 +17,6 @@ const Experience = ({ name }) => {
         if (storedData) {
           console.log("INFO:: USING SESSION");
           setExperiences(JSON.parse(storedData));
-        } else {
-          setIsLoading(true);
-          const data = await getDataLatestGist(experienceDataId);
-
-          setExperiences(data);
-          setIsLoading(false);
-
-          sessionStorage.setItem(keyForSessionStorage, JSON.stringify(data));
         }
       } catch (error) {
         console.log("ERROR:: TO PULL DATA: " + error);
@@ -36,10 +25,6 @@ const Experience = ({ name }) => {
     };
     fetchSkillsData();
   }, [experienceDataId, keyForSessionStorage]);
-
-  if (isLoading || experiences.length === 0) {
-    return <Loading />;
-  }
 
   return (
     <div className="experience">
