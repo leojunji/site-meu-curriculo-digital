@@ -1,10 +1,9 @@
 import "./About.css";
-import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Skill from "../components/Skill";
 import Experience from "../components/Experience";
 import Idiom from "../components/Idiom";
-
+import { useState } from "react";
 const About = () => {
   let listOptions = [
     {
