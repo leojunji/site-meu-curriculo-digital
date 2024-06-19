@@ -1,6 +1,6 @@
 import getDataLatestGist from "../GistContent";
 
-const LoadData = async (item) => {
+const StoreInSessionData = async (item) => {
   try {
     if (sessionStorage.getItem(item.name)) {
       console.log(`INFO:: data for page was already loaded in session`);
@@ -18,4 +18,4 @@ const LoadData = async (item) => {
   }
 };
 
-export default LoadData;
+export default StoreInSessionData;
