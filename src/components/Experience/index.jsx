@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./Experience.css";
 import { useState, useEffect } from "react";
+import Loading from "../Loading";
 
 const Experience = ({ name }) => {
   const tittle = `${name.split(" ")[0]}`;
@@ -9,6 +10,7 @@ const Experience = ({ name }) => {
   const keyForSessionStorage = "experiencesData";
 
   const [experiences, setExperiences] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchSkillsData = async () => {
@@ -17,6 +19,7 @@ const Experience = ({ name }) => {
         if (storedData) {
           console.log("INFO:: USING SESSION");
           setExperiences(JSON.parse(storedData));
+          setIsLoading(false);
         }
       } catch (error) {
         console.log("ERROR:: TO PULL DATA: " + error);
@@ -26,22 +29,26 @@ const Experience = ({ name }) => {
     fetchSkillsData();
   }, [experienceDataId, keyForSessionStorage]);
 
-  return (
-    <div className="experience">
-      <h2 className="tittle">{tittle}</h2>
+  if (isLoading) {
+    return <Loading />;
+  } else {
+    return (
+      <div className="experience">
+        <h2 className="tittle">{tittle}</h2>
 
-      {experiences.map((item) => {
-        return (
-          <div className="topic" key={item.id}>
-            <h2>{item.name}</h2>
-            <h3>{item.company}</h3>
-            <h4>{`(${item.firstDay}-${item.lastDay})`}</h4>
-            <p>{item.Description}</p>
-          </div>
-        );
-      })}
-    </div>
-  );
+        {experiences.map((item) => {
+          return (
+            <div className="topic" key={item.id}>
+              <h2>{item.name}</h2>
+              <h3>{item.company}</h3>
+              <h4>{`(${item.firstDay}-${item.lastDay})`}</h4>
+              <p>{item.Description}</p>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
 };
 
 export default Experience;
