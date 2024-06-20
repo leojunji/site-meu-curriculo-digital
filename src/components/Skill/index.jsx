@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import "./Skill.css";
 import Loading from "../Loading";
+import { useSpring, animated } from "react-spring";
+
 const Skill = ({ name }) => {
   const skillDataId = "1dd58d933e9a4977a87451d9a5684038"; //gistID
   const [skills, setSkills] = useState([]);
@@ -33,22 +35,35 @@ const Skill = ({ name }) => {
       <div className="skill">
         <h2 className="tittle">{name}</h2>
         <div className="lists">
-          {skills.map((item) => {
-            return (
-              <div key={item.id} className="topic">
-                <h3>{item.skillName}</h3>
-                <ul>
-                  {item.details.map((detail, index) => {
-                    return <li key={index}>{detail}</li>;
-                  })}
-                </ul>
-              </div>
-            );
-          })}
+          {skills.map((item, index) => (
+            <SkillItem key={item.id} item={item} delay={index * 300} />
+          ))}
         </div>
       </div>
     );
   }
+};
+
+const SkillItem = ({ item, delay }) => {
+  const fadeConfig = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay,
+    config: { duration: 300 },
+  });
+
+  return (
+    <animated.div style={fadeConfig}>
+      <div className="topic">
+        <h3>{item.skillName}</h3>
+        <ul>
+          {item.details.map((detail, index) => (
+            <li key={index}>{detail}</li>
+          ))}
+        </ul>
+      </div>
+    </animated.div>
+  );
 };
 
 export default Skill;

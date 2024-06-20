@@ -2,9 +2,10 @@
 import "./Experience.css";
 import { useState, useEffect } from "react";
 import Loading from "../Loading";
+import { useSpring, animated } from "react-spring";
 
 const Experience = ({ name }) => {
-  const tittle = `${name.split(" ")[0]}`;
+  const title = `${name.split(" ")[0]}`;
 
   const experienceDataId = "d050de821f776e269c38c2f5223b1bc8";
   const keyForSessionStorage = "experiencesData";
@@ -13,7 +14,7 @@ const Experience = ({ name }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchSkillsData = async () => {
+    const fetchExperienceData = async () => {
       try {
         const storedData = sessionStorage.getItem(keyForSessionStorage);
         if (storedData) {
@@ -26,7 +27,7 @@ const Experience = ({ name }) => {
         sessionStorage.clear();
       }
     };
-    fetchSkillsData();
+    fetchExperienceData();
   }, [experienceDataId, keyForSessionStorage]);
 
   if (isLoading) {
@@ -34,21 +35,34 @@ const Experience = ({ name }) => {
   } else {
     return (
       <div className="experience">
-        <h2 className="tittle">{tittle}</h2>
+        <h2 className="tittle">{title}</h2>
 
-        {experiences.map((item) => {
-          return (
-            <div className="topic" key={item.id}>
-              <h2>{item.name}</h2>
-              <h3>{item.company}</h3>
-              <h4>{`(${item.firstDay}-${item.lastDay})`}</h4>
-              <p>{item.Description}</p>
-            </div>
-          );
-        })}
+        {experiences.map((item, index) => (
+          <ExperienceItem key={item.id} item={item} delay={index * 300} />
+        ))}
       </div>
     );
   }
+};
+
+const ExperienceItem = ({ item, delay }) => {
+  const fadeConfig = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay,
+    config: { duration: 300 },
+  });
+
+  return (
+    <animated.div style={fadeConfig}>
+      <div className="topic">
+        <h2>{item.name}</h2>
+        <h3>{item.company}</h3>
+        <h4>{`(${item.firstDay}-${item.lastDay})`}</h4>
+        <p>{item.Description}</p>
+      </div>
+    </animated.div>
+  );
 };
 
 export default Experience;

@@ -8,6 +8,7 @@ import "./App.css";
 import "./globalClass.css";
 import { useState, useMemo } from "react";
 import StoreInSessionData from "./components/StoreInSessionData";
+
 const App = () => {
   const [dataPageAbout] = useState([
     {

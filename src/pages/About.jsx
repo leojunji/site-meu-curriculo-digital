@@ -4,6 +4,7 @@ import Skill from "../components/Skill";
 import Experience from "../components/Experience";
 import Idiom from "../components/Idiom";
 import { useState } from "react";
+
 const About = () => {
   let listOptions = [
     {
@@ -29,7 +30,6 @@ const About = () => {
       prevOptions.map((option) => ({
         ...option,
         showOption: event.target.value == option.id ? true : false,
-        called: event.target.value == option.id ? true : option.called,
       }))
     );
   };
@@ -59,27 +59,13 @@ const About = () => {
         {options.map((item) => {
           if (item.showOption) {
             if (item.id == 0) {
-              return (
-                <Skill
-                  key={item.id}
-                  name={item.name}
-                  optionCalled={item.called}
-                />
-              );
+              return <Skill key={item.id} name={item.name} />;
             }
             if (item.id == 1) {
-              return (
-                <Experience
-                  key={item.id}
-                  name={item.name}
-                  experienceData={item.data}
-                />
-              );
+              return <Experience key={item.id} name={item.name} />;
             }
             if (item.id == 2) {
-              return (
-                <Idiom key={item.id} name={item.name} idiomsDatas={item.data} />
-              );
+              return <Idiom key={item.id} name={item.name} />;
             } else {
               return (
                 <>

@@ -2,12 +2,13 @@
 
 .menu {
   height: var(--menu-height);
-  display: flex;
+
   position: fixed; /*can be used with top, right, left and bottom*/
   /* this parameter below will stretch in the whole space at top, right and left */
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
   justify-content: flex-start;
   background-color: var(--background-color);
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
@@ -19,7 +20,7 @@
   flex-wrap: wrap; /*when width became narrow, it will wrap, see media to see what happens*/
   gap: 64px;
   align-items: center;
-  margin-left: 64px;
+  margin-left: 3.6rem;
 }
 
 .menu .topics a {
@@ -33,14 +34,14 @@
   color: var(--font-color-featured);
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .menu {
     height: calc(var(--menu-height) * 2);
+    display: flex;
+    justify-content: center;
   }
 
   .menu .topics {
-    flex-direction: column;
-    justify-content: center;
-    gap: 54px;
+    margin: 0px;
   }
 }
