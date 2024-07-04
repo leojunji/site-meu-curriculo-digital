@@ -2,8 +2,8 @@
 
 .App {
   min-height: 100vh; /*make the app/html occupies the whole page*/
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr 2rem;
   background-color: var(--background-color);
   width: 100%;
 }

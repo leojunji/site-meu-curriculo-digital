@@ -44,12 +44,12 @@ const Skill = ({ name }) => {
   }
 };
 
-const SkillItem = ({ item, delay }) => {
+const SkillItem = ({ item, delay, duration }) => {
   const fadeConfig = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
     delay,
-    config: { duration: 300 },
+    config: { duration: duration },
   });
 
   return (

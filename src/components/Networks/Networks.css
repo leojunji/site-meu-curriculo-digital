@@ -1,8 +1,8 @@
 @import "/src/vars.css";
 
 .networks {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
   align-items: center;
   background-color: var(--background-color);
 }
@@ -12,4 +12,5 @@
   font-family: var(--font-family-menu);
   margin: 24px;
   font-size: 1.2rem;
+  justify-self: center;
 }

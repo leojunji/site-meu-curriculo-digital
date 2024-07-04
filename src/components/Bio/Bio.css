@@ -1,13 +1,12 @@
-@import "/src/vars.css";
-
 .bio {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--background-color);
-  margin: 24px;
-  font-size: 1.8rem; /*=24px*/
+  align-self: center; /* Align text to the bottom */
+  padding: 0 2%; /* Adjust padding as needed */
+  color: var(--text-color); /* Set your text color */
+  background: none;
+
+  font-size: 2rem; /*=24px*/
   font-family: var(--font-family-main);
+
   width: 100%;
   color: var(--font-color-primary);
 }

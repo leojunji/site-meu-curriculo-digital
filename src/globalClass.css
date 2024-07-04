@@ -1,3 +1,5 @@
+@import url("./vars.css");
+
 /*classNames : 
 
 
@@ -11,22 +13,13 @@ main-tertiary
 
 */
 
-.main-default {
-  margin-top: var(
-    --menu-height
-  ); /*its the distance between the top and <Main />, and between them, there is the <Menu /> */
+.o-main {
   height: 100%;
 }
 
 .center {
   display: flex;
   justify-content: center;
-}
-
-@media (max-width: 264px) {
-  .main-default {
-    margin-top: calc(var(--menu-height) * 2);
-  }
 }
 
 .curriculum-default {

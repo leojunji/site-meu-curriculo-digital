@@ -45,12 +45,12 @@ const Experience = ({ name }) => {
   }
 };
 
-const ExperienceItem = ({ item, delay }) => {
+const ExperienceItem = ({ item, delay, duration }) => {
   const fadeConfig = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
     delay,
-    config: { duration: 300 },
+    config: { duration: duration },
   });
 
   return (

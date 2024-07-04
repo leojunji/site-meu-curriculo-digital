@@ -1,74 +1,52 @@
 @import "/src/vars.css";
 
 .button-network {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 50% 1fr;
   align-items: center;
+  justify-self: center;
   gap: 6px;
   border-radius: 8px;
-  width: 45%;
+  width: 12rem;
   height: 4.2rem;
   margin-bottom: 24px;
   background-color: #23034d;
-  padding: 4px;
-  position: relative; /* Needed for absolute positioning of pseudo-element */
+
+  position: relative;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .button-network::after {
   content: "";
   position: absolute;
-  bottom: 0; /* Align to the bottom of the button */
-  left: 25%; /* Align to the center of the button */
-  width: 50%; /* Full width */
-  height: 2px; /* Height of the border */
-  background-color: transparent; /* Initial color */
-  transition: background-color 0.5s ease; /* Smooth transition effect */
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
 }
 
 .button-network:hover::after {
-  background-color: #50e3c2; /* Change to desired color on hover */
+  background-color: #50e3c2;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.bnc-left {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-.bnc-right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  margin: 8px;
-}
-
 .bn-logo {
-  width: 50%; /*bn-logo size*/
+  width: 3rem;
+}
+
+.bnc-left {
+  justify-self: center;
 }
 
 .bn-name {
   font-weight: 600;
   font-family: var(--font-family-menu);
-  font-size: 120%; /*name size*/
+
   color: var(--font-color-primary);
 }
 
 .bn-name:hover {
   color: var(--font-color-featured);
-}
-
-@media (min-width: 1000px) and (max-width: 1300px) {
-  .button-network {
-    width: 75%; /*buttonSize-width*/
-    height: 4.2rem; /*buttonSize-heigth*/
-  }
-}
-@media (max-width: 600px) {
-  .button-network {
-    width: 75%; /*buttonSize-width*/
-    height: 4.2rem; /*buttonSize-heigth*/
-  }
 }

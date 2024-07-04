@@ -16,7 +16,7 @@
 
 .btn {
   background-color: var(--background-color);
-  color: var(--font-color-secondary);
+  color: var(--font-color-primary);
   border: none;
 }
 

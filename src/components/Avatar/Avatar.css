@@ -1,15 +1,9 @@
 .avatar {
-  display: flex;
-  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
 .avatar img {
-  width: 55%;
-  height: 100%;
-}
-
-@media (max-width: 1800px) {
-  .avatar img {
-    width: 55%;
-    height: 85%;
-  }
+  width: 20rem;
+  border-radius: 50%;
+  bottom: -50px;
 }

@@ -25,7 +25,7 @@ const ButtonNetwork = ({ name, logo, link, backgroundColor, fontColor }) => {
 
   return (
     <a className="button-network" style={bnBackgroundColor} href={link}>
-      <div className="bn-content bnc-left">
+      <div className=" bnc-left">
         <img
           className="bn-logo"
           src={logo ? `/img/${logo}` : "https://github.com/leojunji.png"}
@@ -33,7 +33,7 @@ const ButtonNetwork = ({ name, logo, link, backgroundColor, fontColor }) => {
         />
       </div>
 
-      <div className="bn-content bnc-right">
+      <div className=" bnc-right">
         <p className="bn-name" style={nameColor}>
           {name}
         </p>

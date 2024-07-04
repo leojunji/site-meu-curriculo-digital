@@ -11,17 +11,19 @@
   --background-color: #170133;
   --background-curriculum: rgb(238, 209, 176);
   --font-color-primary: #8cabff;
-  --font-color-secondary: #8cabff;
+  --font-color-secondary: #7f27ff;
   --font-color-featured: #50e3c2;
   /*================================================================*/
 
   /*MENU
   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   */
-  --font-size-menu: 1rem;
+  --font-size-menu: 2rem;
   --font-weight-menu: 600;
-  --menu-height: 8vh;
+  --menu-height: 100vh;
   --font-family-menu: "Montserrat", sans-serif;
+  --menu-z-index: 1;
+  --animation-timing: 200ms ease-in-out;
   /*================================================================*/
 
   /*MAIN

@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import "./Menu.css";
 import { Link } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({ class_name }) => {
   const links = [
     {
       id: 0,
@@ -16,17 +17,17 @@ const Menu = () => {
   ];
 
   return (
-    <header className="menu">
-      <nav className="topics">
-        {links.map((item) => {
-          return (
-            <Link key={item.id} to={item.link}>
+    <header className={`menu ${class_name}`}>
+      <nav className="topic"></nav>
+      {links.map((item) => {
+        return (
+          <nav key={item.id} className="topic">
+            <Link className="content" to={item.link}>
               {item.text}
             </Link>
-          );
-        })}
-        `
-      </nav>
+          </nav>
+        );
+      })}
     </header>
   );
 };

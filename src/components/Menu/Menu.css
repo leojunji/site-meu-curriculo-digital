@@ -1,47 +1,46 @@
-@import "/src/vars.css";
-
 .menu {
-  height: var(--menu-height);
-
-  position: fixed; /*can be used with top, right, left and bottom*/
-  /* this parameter below will stretch in the whole space at top, right and left */
+  --border-radius: 34px;
+  z-index: var(--menu-z-index);
+  position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  display: flex;
-  justify-content: flex-start;
-  background-color: var(--background-color);
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.menu .topics {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /*when width became narrow, it will wrap, see media to see what happens*/
-  gap: 64px;
+  height: 100%;
+  width: auto;
+  display: grid;
+  grid-template-rows: 3rem repeat(auto-fill, 4rem);
   align-items: center;
-  margin-left: 3.6rem;
+  padding: 12px;
+  gap: 10px;
+  background-color: var(--font-color-secondary);
+  box-shadow: 24px 24px 100px rgba(0, 0, 0, 0.8);
+  transition: var(--animation-timing);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
-.menu .topics a {
+.menu .topic {
   font-family: var(--font-family-menu);
   font-size: var(--font-size-menu);
+  font-style: italic;
   font-weight: var(--font-weight-menu);
-  color: var(--font-color-secondary);
+  color: var(--background-color);
+  position: relative; /* Ensure pseudo-element can be positioned relative to this */
+  padding: 10px;
 }
 
-.menu .topics a:hover {
+.menu .topic:hover {
   color: var(--font-color-featured);
 }
 
-@media (max-width: 400px) {
-  .menu {
-    height: calc(var(--menu-height) * 2);
-    display: flex;
-    justify-content: center;
-  }
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--font-color-featured);
+}
 
-  .menu .topics {
-    margin: 0px;
-  }
+.translate {
+  translate: 100%;
 }

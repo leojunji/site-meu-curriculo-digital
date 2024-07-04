@@ -35,7 +35,7 @@ const About = () => {
   };
 
   return (
-    <main className="main-default center about">
+    <main className="o-main center about">
       <div className="curriculum-options">
         {options.map((item) => {
           return (
@@ -59,13 +59,13 @@ const About = () => {
         {options.map((item) => {
           if (item.showOption) {
             if (item.id == 0) {
-              return <Skill key={item.id} name={item.name} />;
+              return <Skill key={item.id} name={item.name} duration={0} />;
             }
             if (item.id == 1) {
-              return <Experience key={item.id} name={item.name} />;
+              return <Experience key={item.id} name={item.name} duration={0} />;
             }
             if (item.id == 2) {
-              return <Idiom key={item.id} name={item.name} />;
+              return <Idiom key={item.id} name={item.name} duration={0} />;
             } else {
               return (
                 <>

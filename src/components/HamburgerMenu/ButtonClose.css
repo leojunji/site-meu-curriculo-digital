@@ -1,0 +1,64 @@
+.hamburger-menu {
+  --bar-width: 1.5rem;
+  --bar-height: 0.2rem;
+  --hamburger-gap: 0.2rem;
+  --foreground: white;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+  position: fixed;
+  right: 0;
+  z-index: calc(var(--menu-z-index) + 1);
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  cursor: pointer; /*show the hand*/
+  margin: 10px;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  /* animation when I click in the hamburger icon */
+  transition: opacity var(--animation-timing), width var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+/* when clicked/checked */
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+@media (max-width: 400px) {
+  .hamburger-menu {
+    width: 1;
+  }
+}
