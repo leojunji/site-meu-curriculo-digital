@@ -1,8 +1,8 @@
 .hamburger-menu {
-  --bar-width: 1.5rem;
-  --bar-height: 0.2rem;
+  --bar-width: 2rem;
+  --bar-height: 0.3rem;
   --hamburger-gap: 0.2rem;
-  --foreground: white;
+  --foreground: orange;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
@@ -16,7 +16,6 @@
   flex-direction: column;
   gap: var(--hamburger-gap);
   cursor: pointer; /*show the hand*/
-  margin: 10px;
 }
 
 .hamburger-menu::before,

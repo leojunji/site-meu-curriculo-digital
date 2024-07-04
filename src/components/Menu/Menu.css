@@ -44,3 +44,9 @@ a::after {
 .translate {
   translate: 100%;
 }
+
+@media (max-width: 400px) {
+  .menu .topic {
+    font-size: var(--font-size-menu);
+  }
+}
