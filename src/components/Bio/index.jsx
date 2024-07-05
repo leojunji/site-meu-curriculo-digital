@@ -6,7 +6,7 @@ const Bio = () => {
     name: "Leonardo Mukuno",
     course: "Engenharia de software",
     biography:
-      "No momento estou buscando uma estágio na área de desenvolvimento com o objetivo de aprimorar meus conhecimentos nesse campo.",
+      "No momento estou buscando um estágio na área de desenvolvimento com o objetivo de aprimorar meus conhecimentos nesse campo.",
   };
 
   return (

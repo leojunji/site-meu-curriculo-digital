@@ -5,7 +5,7 @@
   min-heigth: 100vh;
   so, usind margin-top: auto; here, will make the max distance possible between fotter and the element above. Considering that the min-heigth is 100vh in his parent(father element)
   */
-  margin-top: auto;
+  margin-top: 0.5rem;
   text-align: center;
 }
 
