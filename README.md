@@ -11,7 +11,8 @@
 
 # Apresentação
 
-[![image](https://github.com/leojunji/site-meu-curriculo-digital/assets/74514993/53d66920-6967-4fe3-9343-ef237d17fc81)](https://meu-curriculo-digital.vercel.app)
+![image](https://github.com/leojunji/site-meu-curriculo-digital/assets/74514993/0c53f3c0-1140-40e0-99df-90a239820931)
+
 
 Este aqui é o repositório do **MeuCurriuculoDigital**. Nele eu coloco minhas informações profissionais, experiências e conhecimentos.
 
