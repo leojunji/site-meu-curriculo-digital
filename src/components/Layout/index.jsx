@@ -28,8 +28,6 @@ const Layout = () => {
     };
   }, [location]);
 
-  console.log("togleeeeeeeeed: " + isToggled);
-
   return (
     <>
       {" "}

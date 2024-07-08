@@ -37,10 +37,18 @@
 .menu .mainTopic {
   display: grid;
   grid-template-columns: auto auto;
+  width: 100%;
   gap: 6px;
 }
 
-.subtopic-hidden {
+.menu .mainTopic .tittle {
+  justify-self: start;
+}
+
+.menu .mainTopic .icon {
+  justify-self: end;
+}
+#subtopic-hidden {
   display: none;
 }
 
@@ -78,7 +86,7 @@
   color: var(--font-color-featured);
 }
 
-.subtopic-show {
+#subtopic-show {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;

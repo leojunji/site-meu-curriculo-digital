@@ -4,7 +4,7 @@ import "./Menu.css";
 import { Link } from "react-router-dom";
 
 const Menu = ({ class_name }) => {
-  const [subTopic, setSubTopic] = useState(false);
+  const [activeSubTopic, setActiveSubTopic] = useState(null);
   const topics = [
     {
       id: 0,
@@ -32,7 +32,7 @@ const Menu = ({ class_name }) => {
       ],
     },
     {
-      id: 3,
+      id: 2,
       text: "Projetos",
       link: "/about",
       subTexts: [
@@ -48,8 +48,12 @@ const Menu = ({ class_name }) => {
     },
   ];
 
-  const handleClick = () => {
-    setSubTopic(!subTopic);
+  const handleClick = (e) => {
+    setActiveSubTopic(
+      parseInt(e.currentTarget.id, 10) === activeSubTopic
+        ? null
+        : parseInt(e.currentTarget.id, 10)
+    );
   };
 
   return (
@@ -58,14 +62,17 @@ const Menu = ({ class_name }) => {
       {topics.map((item) => {
         return item.subTexts ? (
           <nav key={item.id} className="topic withLinks">
-            <button className="mainTopic" onClick={handleClick}>
+            <button id={item.id} className="mainTopic" onClick={handleClick}>
               <p className="tittle">{item.text}</p>
-              <div className="icon">{subTopic ? "-" : "+"}</div>
+              <div className="icon">
+                {activeSubTopic === item.id ? "-" : "+"}
+              </div>
             </button>
             <div
-              className={`subTopic ${
-                subTopic ? "subtopic-show" : "subtopic-hidden"
-              }`}
+              id={
+                item.id === activeSubTopic ? "subtopic-show" : "subtopic-hidden"
+              }
+              className={`subTopic `}
             >
               {item.subTexts.map((subItem, index) => {
                 return (
