@@ -1,52 +1,90 @@
 .menu {
+  --menu-padding: 0.8rem;
   --border-radius: 34px;
   z-index: var(--menu-z-index);
   position: fixed;
   top: 0;
   right: 0;
   height: 100%;
-  width: auto;
+  width: 25%;
   display: grid;
-  grid-template-rows: 3rem repeat(auto-fill, 4rem);
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
+  grid-template-rows: 3em; /* First row with specific height */
+  grid-auto-rows: min-content; /* Rows with height based on content -> If you use repeat(auto-fit or auto-fill) with rows, it can lead an undesired extra space  */
+  padding: var(--menu-padding);
+  align-items: start; /* Align items to the start */
   background-color: var(--font-color-secondary);
   box-shadow: 24px 24px 100px rgba(0, 0, 0, 0.8);
   transition: var(--animation-timing);
   border-radius: var(--border-radius) 0 0 var(--border-radius);
+  gap: 0.8rem;
+  translate: 100%;
 }
 
 .menu .topic {
+  padding: calc(var(--menu-padding) / 2);
+  border-bottom: 1px solid var(--font-color-featured);
+}
+
+.menu .topic .tittle {
   font-family: var(--font-family-menu);
   font-size: var(--font-size-menu);
   font-style: italic;
   font-weight: var(--font-weight-menu);
   color: var(--background-color);
-  position: relative; /* Ensure pseudo-element can be positioned relative to this */
-  padding: 10px;
+  position: relative;
 }
 
-.menu .topic:hover {
+.menu .mainTopic {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px;
+}
+
+.subtopic-hidden {
+  display: none;
+}
+
+.o-link.subTittle {
+  font-size: calc(var(--font-size-menu) / 2);
+  font-family: "Roboto", sans-serif;
+  margin: 0px 0px 2px 24px;
+  padding: 0.2rem;
+  justify-self: start;
+  position: relative; /* Required for pseudo-element positioning */
+}
+
+.o-link.subTittle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px; /* Border width */
+  height: 100%;
+  background-color: var(--font-color-featured); /* Border color */
+  transform: rotate(20deg); /* Rotate to incline */
+  transform-origin: top left;
+}
+
+.menu div.icon {
+  font-size: 2rem;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin-left: 4px;
+}
+
+.menu .tittle:hover,
+.menu .withLinks button.mainTopic:hover,
+.withLinks .o-link:hover {
   color: var(--font-color-featured);
 }
 
-a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--font-color-featured);
+.subtopic-show {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.5rem;
 }
 
 .translate {
-  translate: 100%;
-}
-
-@media (max-width: 400px) {
-  .menu .topic {
-    font-size: var(--font-size-menu);
-  }
+  translate: 0;
 }

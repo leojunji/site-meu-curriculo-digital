@@ -3,7 +3,7 @@ import "./Loading.css";
 
 const Loading = ({ fontColor }) => {
   return (
-    <div className="loading center">
+    <div className="loading">
       <h2 style={{ color: fontColor }}>Loading...</h2>
     </div>
   );

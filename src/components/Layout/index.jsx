@@ -5,7 +5,7 @@ import ButtonClose from "../HamburgerMenu";
 import { useState, useEffect } from "react";
 
 const Layout = () => {
-  const [isToggled, setIsToggled] = useState(false);
+  const [isToggled, setIsToggled] = useState(true);
   const location = useLocation();
 
   const handleToggle = () => {
@@ -13,6 +13,8 @@ const Layout = () => {
   };
 
   useEffect(() => {
+    handleToggle();
+
     const handleEscKeyPress = (event) => {
       if (event.key === "Escape") {
         handleToggle();
@@ -24,15 +26,14 @@ const Layout = () => {
     return () => {
       document.removeEventListener("keydown", handleEscKeyPress);
     };
-  }, []);
-
-  useEffect(() => {
-    handleToggle();
   }, [location]);
+
+  console.log("togleeeeeeeeed: " + isToggled);
+
   return (
     <>
       {" "}
-      <ButtonClose onToggle={handleToggle} checked={!isToggled} />
+      <ButtonClose onToggle={handleToggle} checked={isToggled} />
       {/*the elements inside this fragment will be independent, so, inside the app/html they will be like <header><main><footer> */}
       <Menu class_name={`${isToggled ? "translate" : ""}`} />
       {/*<header>*/}

@@ -1,36 +1,6 @@
 .about {
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--background-color);
-  padding: 0 10%;
-  width: 100%;
-}
-
-.curriculum-options {
-  margin: 32px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 32px;
-}
-
-.btn {
-  background-color: var(--background-color);
-  color: var(--font-color-primary);
-  border: none;
-}
-
-.btn:hover {
-  background: rgb(175, 107, 175);
-  color: var(--background-color);
-}
-
-.btn:focus {
-  background: rgb(175, 107, 175);
-  color: var(--background-color);
-}
-
-.pressed {
-  background: rgb(175, 107, 175);
-  color: var(--background-color);
+  display: grid;
+  justify-content: center;
+  color: white;
+  background-color: red;
 }
