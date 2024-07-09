@@ -43,7 +43,7 @@
 .bn-name {
   font-weight: 600;
   font-family: var(--font-family-menu);
-
+  font-size: 0.9rem;
   color: var(--font-color-primary);
 }
 

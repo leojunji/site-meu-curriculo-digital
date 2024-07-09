@@ -15,7 +15,7 @@ const Networks = () => {
   let networks = [
     {
       id: 0,
-      name: "Github",
+      name: "GitHub",
       logo: "github.svg",
       link: "https://github.com/leojunji",
       position: 2,
@@ -33,7 +33,7 @@ const Networks = () => {
     },
     {
       id: 2,
-      name: "Whatsapp",
+      name: "WhatsApp",
       logo: "whatsapp.svg",
       link: "https://api.whatsapp.com/send?phone=41991645103",
       position: 4,
