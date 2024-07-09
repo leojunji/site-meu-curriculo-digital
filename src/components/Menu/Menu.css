@@ -6,10 +6,10 @@
   top: 0;
   right: 0;
   height: 100%;
-  width: 25%;
+  width: 18rem;
   display: grid;
   grid-template-rows: 3em; /* First row with specific height */
-  grid-auto-rows: min-content; /* Rows with height based on content -> If you use repeat(auto-fit or auto-fill) with rows, it can lead an undesired extra space  */
+  grid-auto-rows: min-content; /* Rows with height based on content -> If you use repeat(auto-fit or auto-fill) with rows, it can lead to an undesired extra space  */
   padding: var(--menu-padding);
   align-items: start; /* Align items to the start */
   background-color: var(--font-color-secondary);
