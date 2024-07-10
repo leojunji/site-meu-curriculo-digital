@@ -2,7 +2,7 @@
   --bar-width: 2rem;
   --bar-height: 0.3rem;
   --hamburger-gap: 0.2rem;
-  --foreground: orange;
+  --foreground: var(--featured-color);
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
