@@ -35,7 +35,7 @@ const About = () => {
   };
 
   return (
-    <main className="o-main center about">
+    <main className="o-main about">
       <div className="curriculum-options">
         {options.map((item) => {
           return (

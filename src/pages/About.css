@@ -1,4 +1,5 @@
 .about {
+  display: flex;
   align-items: center;
   flex-direction: column;
   background-color: var(--background-color);
@@ -12,12 +13,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 32px;
+  justify-content: center;
 }
 
 .btn {
   background-color: var(--background-color);
   color: var(--font-color-primary);
   border: none;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .btn:hover {
