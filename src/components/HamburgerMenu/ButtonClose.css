@@ -9,6 +9,7 @@
 .hamburger-menu {
   position: fixed;
   right: 0;
+  bottom: 0;
   z-index: calc(var(--menu-z-index) + 1);
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
   padding: 24px;
