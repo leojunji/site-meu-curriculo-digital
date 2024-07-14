@@ -3,10 +3,9 @@
   padding: 0 2%; /* Adjust padding as needed */
   color: var(--text-color); /* Set your text color */
   background: none;
-
+  line-height: 1.02;
   font-size: 2rem; /*=24px*/
   font-family: var(--font-family-main);
-
   width: 100%;
   color: var(--font-color-primary);
 }
@@ -23,5 +22,6 @@
     width: 100%;
     font-size: 1.5rem;
     justify-content: center;
+    line-height: 1.2;
   }
 }
