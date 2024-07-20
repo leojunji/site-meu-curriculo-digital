@@ -4,4 +4,6 @@
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--background-color);
+  gap: 2rem;
+  padding: 30px;
 }

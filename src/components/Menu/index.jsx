@@ -37,13 +37,6 @@ const Menu = ({ class_name }) => {
       ],
       position: 3,
     },
-    {
-      id: 2,
-      text: "Projetos",
-      link: "/projects",
-      subTexts: null,
-      position: 2,
-    },
   ];
 
   topics = orderListByPosition(topics);
@@ -91,6 +84,7 @@ const Menu = ({ class_name }) => {
             </div>
           </nav>
         ) : (
+          //If the item dont have sublink, It means that he is a link for a page, or a link for some section in the currently page
           <nav key={item.id} className="topic noLinks">
             <Link className="o-link" to={item.link}>
               <p className="tittle">{item.text}</p>

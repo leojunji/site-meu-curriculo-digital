@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Menu from "../Menu";
 import Footer from "../Footer";
-import ButtonClose from "../HamburgerMenu";
+import HamburgerMenu from "../HamburgerMenu";
 import { useState, useEffect } from "react";
 
 const Layout = () => {
@@ -31,7 +31,7 @@ const Layout = () => {
   return (
     <>
       {" "}
-      <ButtonClose onToggle={handleToggle} checked={isToggled} />
+      <HamburgerMenu onToggle={handleToggle} checked={isToggled} />
       {/*the elements inside this fragment will be independent, so, inside the app/html they will be like <header><main><footer> */}
       <Menu class_name={`${isToggled ? "translate" : ""}`} />
       {/*<header>*/}

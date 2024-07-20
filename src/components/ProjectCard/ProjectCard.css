@@ -1,32 +1,37 @@
-.first {
-  --font-color-main-text: #fff;
-  --width: 20em;
-  --height: 20em;
+.ProjectCard {
+  --font-color-main-text: var(--background-color);
+  --width: 16rem;
+  --height: 16rem;
+  --background-image: none;
   animation: button-anim 2s ease 0s infinite normal forwards;
-}
-
-.hero {
   display: flex;
-  position: relative;
   width: var(--width);
   height: var(--height);
-  border-radius: 30px;
+  border-radius: 32px;
   overflow: hidden;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-  margin: 30px;
+  background-image: var(--background-image);
 }
 
 .image {
-  height: 50%;
-  width: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 4%;
+  justify-content: center;
+}
+
+.image img {
+  width: 100px;
+  height: 100px;
 }
 
 .text {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     0deg,
     var(--background-color),
     var(--font-color-secondary)
-  );
+  ); */
   border-radius: 30px;
   position: absolute;
   top: 55%;
@@ -38,8 +43,8 @@
 }
 
 .logo {
-  height: 80px;
-  width: 80px;
+  height: 74px;
+  width: 74px;
   border-radius: 20px;
   background-color: var(--background-color);
   position: absolute;
@@ -64,7 +69,7 @@
   height: 70%;
   width: 60%;
   color: var(--font-color-main-text);
-  left: 150px;
+  left: 100px;
   font-weight: 1000;
   font-size: 2rem;
 }
@@ -90,9 +95,10 @@
   }
 }
 
-.first:hover {
+.ProjectCard:hover {
   cursor: pointer;
   animation: jump 0.5s ease-in-out;
   transform: scale(1.1);
-  --font-color-main-text: var(--font-color-featured);
+
+  --background-image: linear-gradient(to bottom left, #541ba8, #170133);
 }

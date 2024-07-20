@@ -8,6 +8,7 @@ const Projects = () => {
     <main className="o-main projects">
       <ProjectCard />
       <ProjectCard />
+      <ProjectCard />
     </main>
   );
 };
