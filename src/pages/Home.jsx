@@ -31,6 +31,7 @@ const Home = () => {
 
           <div className="projects" id="projects">
             <ProjectCard
+              className="projectCard"
               projectLogo={"CastWave_logo.svg"}
               mainLanguage={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
@@ -40,6 +41,7 @@ const Home = () => {
               // secondColor={"aqua"}
             />
             <ProjectCard
+              className="projectCard"
               projectLogo={"api.svg"}
               mainLanguage={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
@@ -49,6 +51,7 @@ const Home = () => {
               // secondColor={"crimson"}
             />
             <ProjectCard
+              className="projectCard"
               projectLogo={null}
               mainLanguage={
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"

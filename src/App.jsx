@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
 import NoPage from "./pages/NoPage";
 import "./Reset.css";
 import "./App.css";
@@ -38,8 +37,8 @@ const App = () => {
         <Routes className="routes">
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            {/* <Route path="/about" element={<About />} /> */}
-            {/* <Route path="/" element={<Projects />} /> */}
+            <Route path="/about" element={<About />} />
+            {/* <Route path="/skill" element={<Skill />} /> */}
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

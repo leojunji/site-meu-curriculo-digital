@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Loading from "../Loading";
 import { useSpring, animated } from "react-spring";
 
-const Experience = ({ name }) => {
+const Experience = ({ name, delay }) => {
   const title = `${name.split(" ")[0]}`;
 
   const experienceDataId = "d050de821f776e269c38c2f5223b1bc8";
@@ -38,7 +38,7 @@ const Experience = ({ name }) => {
         <h2 className="tittle">{title}</h2>
 
         {experiences.map((item, index) => (
-          <ExperienceItem key={item.id} item={item} delay={index * 300} />
+          <ExperienceItem key={item.id} item={item} delay={index * delay} />
         ))}
       </div>
     );

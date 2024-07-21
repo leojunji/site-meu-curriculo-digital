@@ -18,23 +18,7 @@ const Menu = ({ class_name }) => {
       id: 1,
       text: "Sobre mim",
       link: "/about",
-      subTexts: [
-        {
-          text: "skills",
-          link: "/",
-          position: 1,
-        },
-        {
-          text: "experiências",
-          link: "/",
-          position: 2,
-        },
-        {
-          text: "idiomas",
-          link: "/",
-          position: 3,
-        },
-      ],
+      subTexts: null,
       position: 3,
     },
   ];

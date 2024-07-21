@@ -17,8 +17,18 @@
 .c-second {
   display: grid;
   grid-auto-flow: row;
-  justify-content: center;
   width: 100%;
+}
+
+.c-second .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.c-second .projects .projectCard {
+  flex-grow: 1;
 }
 
 .c-third {
@@ -58,6 +68,7 @@
   display: grid;
   align-items: center;
 
+  /*Background will seems like a glass*/
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),

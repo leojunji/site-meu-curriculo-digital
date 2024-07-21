@@ -1,6 +1,41 @@
 .about {
-  display: grid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-color);
+  padding: 0 10%;
+  width: 100%;
+}
+
+.curriculum-options {
+  margin: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
   justify-content: center;
-  color: white;
-  background-color: red;
+}
+
+.btn {
+  background-color: var(--background-color);
+  color: var(--font-color-primary);
+  border: none;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background: rgb(175, 107, 175);
+  color: var(--background-color);
+}
+
+.btn:focus {
+  background: rgb(175, 107, 175);
+  color: var(--background-color);
+}
+
+.pressed {
+  background: rgb(175, 107, 175);
+  color: var(--background-color);
 }
