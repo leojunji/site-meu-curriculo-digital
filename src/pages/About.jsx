@@ -2,7 +2,7 @@ import "./About.css";
 import Button from "react-bootstrap/Button";
 import Experience from "../components/Experience";
 import Idiom from "../components/Idiom";
-import { useState } from "react";
+import { useState, useLayoutEffect } from "react";
 import Skill from "../components/Skill";
 
 const About = () => {
@@ -24,6 +24,11 @@ const About = () => {
     },
   ];
   const [options, setOptions] = useState(listOptions);
+
+  //It will scroll to top of the page, when I enter in this page(about.jsx)
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const showContent = (event) => {
     setOptions((prevOptions) =>

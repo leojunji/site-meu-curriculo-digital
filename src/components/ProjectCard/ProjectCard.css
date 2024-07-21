@@ -1,4 +1,6 @@
 .cardArea {
+  margin-top: 3rem;
+  margin-bottom: 24px;
   position: relative;
 }
 
@@ -6,12 +8,14 @@
   display: none;
   position: absolute;
   width: 4rem;
-  top: -1.9rem;
-  left: 14rem;
-  transform: rotate(38deg);
+  top: -2.2rem;
+  left: -1.01rem;
+  transform: rotate(-38deg);
 }
 
 .ProjectCard {
+  margin-left: 5%;
+  margin-right: 5%;
   --font-color-main-text: var(--background-color);
   --width: 16rem;
   --height: 16rem;

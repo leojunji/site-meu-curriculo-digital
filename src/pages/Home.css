@@ -15,44 +15,14 @@
 }
 
 .c-second {
-  display: grid;
-  grid-auto-flow: row;
+  /*when the cards inside this content-second are bigger than the screen, they will be hidden, and you can see the with their own scroll(set in Projects.css)*/
+  overflow: hidden;
   width: 100%;
-}
-
-.c-second .projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.c-second .projects .projectCard {
-  flex-grow: 1;
 }
 
 .c-third {
   display: grid;
   justify-content: center;
-}
-.c-second .projectsTxt {
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-}
-.c-second .projectsTxt h1 {
-  position: relative;
-  font-style: oblique;
-  font-size: 4rem;
-  color: var(--font-color-featured);
-}
-
-.c-second .projectsTxt .tittleIcon {
-  position: absolute;
-  top: -2rem;
-  width: 4rem;
-  left: 12.5rem;
-  transform: rotate(38deg);
 }
 
 .c-fourth {

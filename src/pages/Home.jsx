@@ -1,11 +1,11 @@
 import "./Home.css";
-
 import Bio from "../components/Bio";
 import Networks from "../components/Networks";
 import Avatar from "../components/Avatar";
-import ProjectCard from "../components/ProjectCard";
+import Projects from "../components/Projects";
+
 import ButtonAnimated from "../components/ButtonAnimated";
-import { useState } from "react";
+import { useEffect, useState, useLayoutEffect } from "react";
 
 const Home = () => {
   const [btnAnimatedActive, setBtnAnimatedActive] = useState(false);
@@ -13,6 +13,31 @@ const Home = () => {
   const handleToggle = () => {
     setBtnAnimatedActive(!btnAnimatedActive);
   };
+
+  //It will scroll to top of the page, when I enter in this page(about.jsx)
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      // Check if Ctrl + C are pressed
+      if (event.ctrlKey && event.key === "c") {
+        handleToggle();
+      }
+
+      // Check if Escape key is pressed
+      if (event.key === "Escape") {
+        setBtnAnimatedActive(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }); // Include setBtnAnimatedActive in dependency array
 
   return (
     <>
@@ -22,46 +47,7 @@ const Home = () => {
           <Bio />
         </div>
         <div className="c-second">
-          <div className="projectsTxt">
-            <h1 className="tittle">
-              Projetos
-              <img src="/img/work_tools.svg" alt="" className="tittleIcon" />
-            </h1>
-          </div>
-
-          <div className="projects" id="projects">
-            <ProjectCard
-              className="projectCard"
-              projectLogo={"CastWave_logo.svg"}
-              mainLanguage={
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-              }
-              text={"Site WaveCast"}
-              // firstColor={"cornflowerblue"}
-              // secondColor={"aqua"}
-            />
-            <ProjectCard
-              className="projectCard"
-              projectLogo={"api.svg"}
-              mainLanguage={
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-              }
-              text={"API Rest em Java"}
-              // firstColor={"cornflowerblue"}
-              // secondColor={"crimson"}
-            />
-            <ProjectCard
-              className="projectCard"
-              projectLogo={null}
-              mainLanguage={
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-              }
-              text={"Este Site!"}
-              crown={true}
-              // firstColor={"aqua"}
-              // secondColor={"white"}
-            />
-          </div>
+          <Projects />
         </div>
         <div className="c-third">
           <ButtonAnimated text={"Contatar"} onToggle={handleToggle} />
