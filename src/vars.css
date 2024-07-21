@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 :root {
   /*BACKGROUND
@@ -38,6 +38,6 @@
   /*BUTTON ANIMATED
   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   */
-  --font-family-btn-animated: "Varela Round", sans-serif;
+  --font-family-btn-animated: "Anton", sans-serif;
   /*================================================================*/
 }

@@ -1,25 +1,39 @@
+/* eslint-disable react/prop-types */
 import "./ProjectCard.css";
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  projectLogo,
+  mainLanguage,
+  text,
+  firstColor,
+  secondColor,
+}) => {
   return (
     <div className="ProjectCard">
       <div className="image">
-        <img src="site_logo.svg" alt="" />
+        <img
+          src={projectLogo ? `/img/${projectLogo}` : "site_logo.svg"}
+          alt="projectlogo"
+        />
       </div>
 
       <div
         className="text"
-        style={{ background: "linear-gradient(to left, orange, red)" }}
+        style={{
+          background: `linear-gradient(to left, ${
+            firstColor ? firstColor : "orange"
+          }, ${secondColor ? secondColor : "crimson"})`,
+        }}
       >
         <div className="main-text">
-          <p>Site WaveCast</p>
+          <p>{text ? text : "Sem texto..."}</p>
         </div>
       </div>
       <div className="logo">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-
-        {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" /> */}
-        {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /> */}
+        <img
+          src={mainLanguage ? mainLanguage : "/img/programacao.svg"}
+          alt="main language"
+        />
       </div>
     </div>
   );

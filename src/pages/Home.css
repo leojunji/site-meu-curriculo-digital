@@ -25,14 +25,24 @@
   display: grid;
   justify-content: center;
 }
-.c-second .tittle {
+.c-second .projectsTxt {
   padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
-.c-second h1 {
+.c-second .projectsTxt h1 {
+  position: relative;
   font-style: oblique;
-  justify-self: center;
   font-size: 4rem;
   color: var(--font-color-featured);
+}
+
+.c-second .projectsTxt .tittleIcon {
+  position: absolute;
+  top: -2rem;
+  width: 4rem;
+  left: 12.5rem;
+  transform: rotate(38deg);
 }
 
 .c-fourth {

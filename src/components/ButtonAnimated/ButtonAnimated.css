@@ -1,12 +1,12 @@
 .buttonAnimated {
-  --width: 10rem;
+  --width: 12rem;
   width: var(--width);
   height: calc(var(--width) / 2);
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #340570;
-  background-image: url("/img/btnAnimatedBackground.svg");
+  /* background-image: url("/img/btnAnimatedBackground.svg"); */
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,6 +30,7 @@
 
 .buttonAnimated label {
   font-size: 2rem;
+  font-style: oblique;
   color: var(--font-color-featured);
   font-family: var(--font-family-btn-animated);
 }

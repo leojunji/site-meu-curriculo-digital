@@ -43,15 +43,15 @@
 }
 
 .logo {
-  height: 74px;
-  width: 74px;
+  height: 64px;
+  width: 64px;
   border-radius: 20px;
-  background-color: var(--background-color);
+
   position: absolute;
   bottom: 30%;
   left: 30px;
   overflow: hidden;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+  /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7); */
 }
 
 .logo img {
