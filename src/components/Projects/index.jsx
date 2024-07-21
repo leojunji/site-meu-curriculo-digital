@@ -31,7 +31,7 @@ const Projects = () => {
     {
       id: 3,
       className: "projectCard",
-      projectLogo: null,
+      projectLogo: "site_logo.svg",
       mainLanguage:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       text: "Este Site!",
