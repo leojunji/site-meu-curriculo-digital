@@ -1,11 +1,6 @@
 .avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.avatar .avatar-crowned {
-  position: relative;
+  align-self: center;
+  justify-self: center;
 }
 
 .avatar .o-img {
@@ -13,10 +8,10 @@
   border-radius: 50%;
 }
 
-.avatar .crown {
+/* .avatar .crown {
   position: absolute;
   width: 4rem;
   top: -1.5rem;
   left: 3.5rem;
   transform: rotate(-15deg);
-}
+} */

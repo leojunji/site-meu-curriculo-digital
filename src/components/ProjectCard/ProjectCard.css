@@ -1,3 +1,16 @@
+.cardArea {
+  position: relative;
+}
+
+.crown {
+  display: none;
+  position: absolute;
+  width: 4rem;
+  top: -1.9rem;
+  left: 14rem;
+  transform: rotate(38deg);
+}
+
 .ProjectCard {
   --font-color-main-text: var(--background-color);
   --width: 16rem;

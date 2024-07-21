@@ -54,6 +54,7 @@ const Home = () => {
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               }
               text={"Este Site!"}
+              crown={true}
               // firstColor={"aqua"}
               // secondColor={"white"}
             />
