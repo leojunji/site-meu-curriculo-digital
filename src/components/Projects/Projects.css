@@ -18,10 +18,10 @@
 
 .projectsTxt .icon {
   position: absolute;
-  top: -1rem;
-  left: 12.2rem;
+  top: -1.9rem;
+  left: -1rem;
   width: 3rem;
-  transform: rotate(38deg);
+  transform: rotate(-20deg);
 }
 
 .cardsArea {
