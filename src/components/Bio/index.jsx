@@ -12,7 +12,7 @@ const Bio = () => {
   return (
     <section className="bio">
       <p>
-        Olá meu nome é <strong>{user.name}</strong> e estou cursando{" "}
+        Olá, meu nome é <strong>{user.name}</strong> e estou cursando{" "}
         {user.course}!
       </p>
       <p>{user.biography}</p>

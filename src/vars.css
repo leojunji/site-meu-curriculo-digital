@@ -6,6 +6,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+@font-face {
+  font-family: "Melted";
+  src: url("/fonts/Melted\ Monster.ttf");
+}
+
+@font-face {
+  font-family: "Coffee";
+  src: url("/fonts/Lonely\ Coffee.ttf");
+}
 :root {
   /*BACKGROUND
   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

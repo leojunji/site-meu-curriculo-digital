@@ -1,6 +1,6 @@
 .home {
   --row-gap: 3rem;
-  background-color: var(--background-color); /* var(--background-color)*/
+  background-color: var(--background-color);
   display: grid;
   grid-template-rows: auto auto;
   row-gap: var(--row-gap);
@@ -10,8 +10,8 @@
 
 .c-first {
   display: grid;
-  grid-template-columns: auto auto; /* Two columns */
-  gap: 20px; /* Adjust the gap between items */
+  grid-template-columns: auto auto;
+  gap: 20px;
 }
 
 .c-second {

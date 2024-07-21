@@ -2,8 +2,9 @@ const NoPage = () => {
   return (
     <main
       style={{
+        fontFamily: "Melted",
         color: "crimson",
-        fontSize: "10rem",
+        fontSize: "13rem",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
