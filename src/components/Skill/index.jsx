@@ -4,7 +4,7 @@ import "./Skill.css";
 import Loading from "../Loading";
 import { useSpring, animated } from "react-spring";
 
-const Skill = ({ name }) => {
+const Skill = ({ name, delay }) => {
   const skillDataId = "1dd58d933e9a4977a87451d9a5684038"; //gistID
   const [skills, setSkills] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +36,7 @@ const Skill = ({ name }) => {
         <h2 className="tittle">{name}</h2>
         <div className="lists">
           {skills.map((item, index) => (
-            <SkillItem key={item.id} item={item} delay={index * 300} />
+            <SkillItem key={item.id} item={item} delay={index * delay} />
           ))}
         </div>
       </div>

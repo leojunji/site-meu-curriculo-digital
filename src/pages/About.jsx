@@ -1,9 +1,9 @@
 import "./About.css";
 import Button from "react-bootstrap/Button";
-import Skill from "../components/Skill";
 import Experience from "../components/Experience";
 import Idiom from "../components/Idiom";
-import { useState } from "react";
+import { useState, useLayoutEffect } from "react";
+import Skill from "../components/Skill";
 
 const About = () => {
   let listOptions = [
@@ -24,6 +24,11 @@ const About = () => {
     },
   ];
   const [options, setOptions] = useState(listOptions);
+
+  //It will scroll to top of the page, when I enter in this page(about.jsx)
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const showContent = (event) => {
     setOptions((prevOptions) =>
@@ -59,13 +64,34 @@ const About = () => {
         {options.map((item) => {
           if (item.showOption) {
             if (item.id == 0) {
-              return <Skill key={item.id} name={item.name} duration={0} />;
+              return (
+                <Skill
+                  key={item.id}
+                  name={item.name}
+                  duration={0}
+                  delay={200}
+                />
+              );
             }
             if (item.id == 1) {
-              return <Experience key={item.id} name={item.name} duration={0} />;
+              return (
+                <Experience
+                  key={item.id}
+                  name={item.name}
+                  duration={0}
+                  delay={200}
+                />
+              );
             }
             if (item.id == 2) {
-              return <Idiom key={item.id} name={item.name} duration={0} />;
+              return (
+                <Idiom
+                  key={item.id}
+                  name={item.name}
+                  duration={0}
+                  delay={200}
+                />
+              );
             } else {
               return (
                 <>

@@ -28,7 +28,7 @@ const ButtonNetwork = ({ name, logo, link, backgroundColor, fontColor }) => {
       <div className=" bnc-left">
         <img
           className="bn-logo"
-          src={logo ? `/img/${logo}` : "https://github.com/leojunji.png"}
+          src={logo ? `/img/${logo}` : "/favicon-32x32.png"}
           alt={`Logo ${name}`}
         />
       </div>

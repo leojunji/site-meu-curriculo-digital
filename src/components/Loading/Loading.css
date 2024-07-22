@@ -1,3 +1,7 @@
+.loading {
+  display: flex;
+  justify-content: center;
+}
 .loading h2 {
   color: var(--font-color-featured);
 }

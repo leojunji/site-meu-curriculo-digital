@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import "./ButtonClose.css";
+import "./HamburgerMenu.css";
 
 const HamburgerMenu = ({ onToggle, checked }) => {
   return (

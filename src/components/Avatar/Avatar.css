@@ -2,8 +2,16 @@
   align-self: center;
   justify-self: center;
 }
-.avatar img {
+
+.avatar .o-img {
   width: 20rem;
   border-radius: 50%;
-  bottom: -50px;
 }
+
+/* .avatar .crown {
+  position: absolute;
+  width: 4rem;
+  top: -1.5rem;
+  left: 3.5rem;
+  transform: rotate(-15deg);
+} */

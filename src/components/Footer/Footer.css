@@ -12,3 +12,7 @@
 .footer p {
   color: var(--font-color-primary);
 }
+
+.footer .brokenLink:hover {
+  color: crimson;
+}

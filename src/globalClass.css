@@ -1,27 +1,8 @@
 @import url("./vars.css");
 
-/*classNames : 
-
-
-formation:
- <tagName>-<state>
-
- e.g
-
-main-tertiary
-
-
-*/
-
 .o-main {
   min-height: 100dvh;
 }
-
-.center {
-  display: flex;
-  justify-content: center;
-}
-
 .curriculum-default {
   color: var(--background-color);
   background-color: var(--background-curriculum);
@@ -35,9 +16,7 @@ main-tertiary
 
 .curriculum-default .tittle {
   display: flex;
-  /*é necessário usá-lo para centralizar o conteúdo, do contrário ele não vai ficar no centro. ele de certa forma define onde é o centro*/
   flex-direction: column;
-  /*alinha o titulo <h1> no centro*/
   align-items: center;
   font-size: 3rem;
   font-weight: 600;

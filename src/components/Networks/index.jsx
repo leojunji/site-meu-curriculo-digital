@@ -1,24 +1,15 @@
 import "./Networks.css";
 import ButtonNetwork from "../ButtonNetwork";
+import { orderListByPosition } from "../../functions";
 
 const Networks = () => {
-  function orderListByPosition(list) {
-    const size = list.length;
-    list.sort(
-      (a, b) =>
-        (a.position === null ? size : a.position) -
-        (b.position === null ? size : b.position)
-    );
-    return list;
-  }
-
   let networks = [
     {
       id: 0,
-      name: "GitHub",
+      name: "Github",
       logo: "github.svg",
       link: "https://github.com/leojunji",
-      position: 3,
+      position: 4,
       backGroundColor: null,
       fontColor: null,
     },
@@ -27,13 +18,13 @@ const Networks = () => {
       name: "Linkedin",
       logo: "linkedin.svg",
       link: "https://www.linkedin.com/in/leonardo-junji-494a43180",
-      position: 4,
+      position: null,
       backGroundColor: null,
       fontColor: null,
     },
     {
       id: 2,
-      name: "WhatsApp",
+      name: "Whatsapp",
       logo: "whatsapp.svg",
       link: "https://api.whatsapp.com/send?phone=41991645103",
       position: 1,

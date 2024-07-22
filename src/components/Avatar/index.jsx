@@ -3,7 +3,8 @@ import "./Avatar.css";
 const Avatar = () => {
   return (
     <section className="avatar">
-      <img className="avatar" src="https://github.com/leojunji.png" />
+      {/* <img src="/img/crown.svg" alt="crown" className="crown" /> */}
+      <img className="o-img" src="/img/profileImage.jpeg" />
     </section>
   );
 };

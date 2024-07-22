@@ -6,6 +6,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@font-face {
+  font-family: "Melted";
+  src: url("/fonts/Melted\ Monster.ttf");
+}
+
+@font-face {
+  font-family: "Coffee";
+  src: url("/fonts/Lonely\ Coffee.ttf");
+}
 :root {
   /*BACKGROUND
   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -35,5 +46,11 @@
   */
   --font-family-main: "Krona One", sans-serif;
   --font-family-curriculum: "Times", sans-serif;
+  /*================================================================*/
+
+  /*BUTTON ANIMATED
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  */
+  --font-family-btn-animated: "Anton", sans-serif;
   /*================================================================*/
 }

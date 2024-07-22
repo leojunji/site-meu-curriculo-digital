@@ -1,0 +1,36 @@
+.buttonAnimated {
+  --width: 12rem;
+  width: var(--width);
+  height: calc(var(--width) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #340570;
+  /* background-image: url("/img/btnAnimatedBackground.svg"); */
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttonAnimated:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 2px 5px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.buttonAnimated:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transform: translateY(5px);
+}
+
+.buttonAnimated label {
+  font-size: 2rem;
+  font-style: oblique;
+  color: var(--font-color-featured);
+  font-family: var(--font-family-btn-animated);
+}

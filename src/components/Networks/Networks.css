@@ -4,7 +4,7 @@
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
   align-items: center;
-  background-color: var(--background-color);
+  background-color: none;
 }
 
 .networks-tittle {
