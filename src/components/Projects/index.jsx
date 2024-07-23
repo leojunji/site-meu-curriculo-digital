@@ -35,7 +35,7 @@ const Projects = () => {
       mainLanguage:
         "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       text: "Este Site!",
-      link: "#",
+      link: "https://github.com/leojunji/site-meu-curriculo-digital",
       crown: true,
       // firstColor: "aqua",
       // secondColor: "white"
