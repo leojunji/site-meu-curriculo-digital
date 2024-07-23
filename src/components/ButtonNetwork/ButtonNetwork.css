@@ -9,9 +9,8 @@
   border-radius: 8px;
   width: 15em;
   height: 5rem;
-  margin-bottom: 24px;
+  margin-bottom: 5%;
   background-color: #23034d;
-
   position: relative;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
 }

@@ -12,7 +12,7 @@
   bottom: 0;
   z-index: calc(var(--menu-z-index) + 1);
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  padding: 24px;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   gap: var(--hamburger-gap);
