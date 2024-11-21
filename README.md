@@ -16,7 +16,8 @@
 <h1 align="center">Apresentação</h1>
 
 
-![image](https://github.com/leojunji/site-meu-curriculo-digital/assets/74514993/0c53f3c0-1140-40e0-99df-90a239820931)
+![image](https://github.com/user-attachments/assets/b89ba0ba-67fe-48a1-9a9d-b21188313504)
+
 
 <p align="center">
 <a href="https://meu-curriculo-digital.vercel.app" text-decoration="none" >MeuCurriuculoDigital</a>
