@@ -18,12 +18,11 @@
 
 ![image](https://github.com/leojunji/site-meu-curriculo-digital/assets/74514993/0c53f3c0-1140-40e0-99df-90a239820931)
 
+<p align="center">
+<a href="https://meu-curriculo-digital.vercel.app" text-decoration="none" >MeuCurriuculoDigital</a>
+</p>
 
 Este aqui é o repositório do **MeuCurriuculoDigital**. Nele eu coloco minhas informações profissionais, experiências e conhecimentos.
-
-Você também pode acessar o site através do link:
-
-[MeuCurriuculoDigital](https://meu-curriculo-digital.vercel.app)
 
 ---
 
