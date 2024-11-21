@@ -11,9 +11,10 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain-wordmark.svg" width="40" height="40"/>
   
 
-</p>
 
-# Apresentação
+
+<h1 align="center">Apresentação</h1>
+
 
 ![image](https://github.com/leojunji/site-meu-curriculo-digital/assets/74514993/0c53f3c0-1140-40e0-99df-90a239820931)
 
