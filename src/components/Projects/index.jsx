@@ -13,6 +13,8 @@ const Projects = () => {
       text: "Site WaveCast",
       link: "https://wavecast-lyart.vercel.app/",
       crown: false,
+      width: false,
+      height: false,
       // firstColor: "cornflowerblue",
       // secondColor: "aqua"
     },
@@ -25,6 +27,8 @@ const Projects = () => {
       text: "APIs REST em Java",
       link: "https://github.com/leojunji/projetos-java",
       crown: false,
+      width: false,
+      height: false,
       // firstColor: "cornflowerblue",
       // secondColor: "crimson"
     },
@@ -37,6 +41,22 @@ const Projects = () => {
       text: "Este Site!",
       link: "https://github.com/leojunji/site-meu-curriculo-digital",
       crown: true,
+      width: false,
+      height: false,
+      // firstColor: "aqua",
+      // secondColor: "white"
+    },
+    {
+      id: 4,
+      className: "projectCard",
+      projectLogo: "avl_tree.svg",
+      mainLanguage:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+      text: "AVL Tree",
+      link: "https://github.com/leojunji/Java_AVL_Tree",
+      crown: false,
+      width: "200",
+      height: "100",
       // firstColor: "aqua",
       // secondColor: "white"
     },
@@ -84,6 +104,8 @@ const Projects = () => {
                   mainLanguage={item.mainLanguage}
                   text={item.text}
                   crown={item.crown}
+                  width={item.width}
+                  height={item.height}
                   // firstColor={"cornflowerblue"}
                   // secondColor={"aqua"}
                 />
