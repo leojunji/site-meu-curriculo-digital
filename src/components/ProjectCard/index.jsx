@@ -8,6 +8,8 @@ const ProjectCard = ({
   firstColor,
   secondColor,
   crown,
+  width,
+  height,
 }) => {
   return (
     <div className="cardArea">
@@ -22,6 +24,7 @@ const ProjectCard = ({
           <img
             src={projectLogo ? `/img/${projectLogo}` : "site_logo.svg"}
             alt="projectlogo"
+            style={{ width: `${width}px`, height: `${height}px` }}
           />
         </div>
 
