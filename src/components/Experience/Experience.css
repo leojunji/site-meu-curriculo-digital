@@ -22,14 +22,14 @@
 }
 
 .experience .topic h3 {
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
-.experience .topic h4 {
+/* .experience .topic h4 {
   font-size: 0.8 rem;
-}
+} */
 
 .experience .topic p {
-  font-size: 0.8 rem;
+  font-size: 1.03rem;
 }
