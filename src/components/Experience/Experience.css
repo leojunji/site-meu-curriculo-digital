@@ -18,7 +18,7 @@
 
 .experience .topic h2 {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .experience .topic h3 {
@@ -26,10 +26,11 @@
   font-weight: 600;
 }
 
-/* .experience .topic h4 {
-  font-size: 0.8 rem;
-} */
+.experience .topic h4 {
+  font-size: 0.8rem;
+}
 
 .experience .topic p {
   font-size: 1.03rem;
+  font-weight: 400;
 }
